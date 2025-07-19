@@ -1,0 +1,23 @@
+# Dependency folders
+node_modules/
+vendor/
+
+# Build output
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# Editor/IDE folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project

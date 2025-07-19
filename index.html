@@ -1,0 +1,2704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AZU - Artist & Musician. Experience immersive music and artistic vision."
+    />
+    <meta
+      name="keywords"
+      content="AZU, musician, artist, music, songs, albums"
+    />
+    <meta name="author" content="AZU" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="AZU - Artist & Musician" />
+    <meta
+      property="og:description"
+      content="Experience AZU's immersive music and artistic vision"
+    />
+    <meta property="og:image" content="./assets/images/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:title" content="AZU - Artist & Musician" />
+    <meta
+      property="twitter:description"
+      content="Experience AZU's immersive music and artistic vision"
+    />
+    <meta property="twitter:image" content="./assets/images/og-image.jpg" />
+
+    <title>AZU - Artist & Musician</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "azu-purple_alt": "#B975F9",
+              "azu-purple": "#B975F9",
+              "azu-indigo": "#7C3AED",
+              "azu-dark": "#0F0F0F",
+              "azu-darker": "#0A0A0A",
+              "azu-gray": "#1A1A1A",
+              "azu-gray-light": "#2A2A2A",
+              "azu-accent": "#C084FC",
+            },
+            fontFamily: {
+              display: ["Playfair Display", "serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- No JavaScript preloading needed -->
+  </head>
+  <body class="bg-azu-dark text-white font-body antialiased">
+    <!-- Skip to main content for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-white text-black px-4 py-2 rounded-md z-50"
+    >
+      Skip to main content
+    </a>
+
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full z-40 bg-black bg-opacity-50 backdrop-blur-sm transition-all duration-300"
+      id="navbar"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="text-2xl font-display font-bold text-white">AZU</div>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#hero"
+              class="text-white hover:text-azu-purple transition-colors duration-200"
+              >Home</a
+            >
+            <a
+              href="#story"
+              class="text-white hover:text-azu-purple transition-colors duration-200"
+              >My Story</a
+            >
+            <a
+              href="#music"
+              class="text-white hover:text-azu-purple transition-colors duration-200"
+              >Music</a
+            >
+            <a
+              href="#about"
+              class="text-white hover:text-azu-purple transition-colors duration-200"
+              >About</a
+            >
+            <a
+              href="#merch"
+              class="text-white hover:text-azu-purple transition-colors duration-200"
+              >Merch</a
+            >
+            <a
+              href="#news"
+              class="text-white hover:text-azu-purple transition-colors duration-200"
+              >News</a
+            >
+            <a
+              href="#books"
+              class="text-white hover:text-azu-purple transition-colors duration-200"
+              >Books</a
+            >
+            <a
+              href="#newsletter"
+              class="text-white hover:text-azu-purple transition-colors duration-200"
+              >Newsletter</a
+            >
+            <a
+              href="#contact"
+              class="text-white hover:text-azu-purple transition-colors duration-200"
+              >Contact</a
+            >
+          </div>
+          <!-- Mobile menu button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-azu-purple p-2 rounded-md"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+          <div
+            class="px-2 pt-2 pb-3 space-y-1 bg-black bg-opacity-90 rounded-lg"
+          >
+            <a
+              href="#hero"
+              class="block px-3 py-2 text-white hover:text-azu-purple transition-colors duration-200"
+              >Home</a
+            >
+            <a
+              href="#story"
+              class="block px-3 py-2 text-white hover:text-azu-purple transition-colors duration-200"
+              >My Story</a
+            >
+            <a
+              href="#music"
+              class="block px-3 py-2 text-white hover:text-azu-purple transition-colors duration-200"
+              >Music</a
+            >
+            <a
+              href="#about"
+              class="block px-3 py-2 text-white hover:text-azu-purple transition-colors duration-200"
+              >About</a
+            >
+            <a
+              href="#merch"
+              class="block px-3 py-2 text-white hover:text-azu-purple transition-colors duration-200"
+              >Merch</a
+            >
+            <a
+              href="#news"
+              class="block px-3 py-2 text-white hover:text-azu-purple transition-colors duration-200"
+              >News</a
+            >
+            <a
+              href="#books"
+              class="block px-3 py-2 text-white hover:text-azu-purple transition-colors duration-200"
+              >Books</a
+            >
+            <a
+              href="#newsletter"
+              class="block px-3 py-2 text-white hover:text-azu-purple transition-colors duration-200"
+              >Newsletter</a
+            >
+            <a
+              href="#contact"
+              class="block px-3 py-2 text-white hover:text-azu-purple transition-colors duration-200"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="h-screen relative overflow-hidden"
+        role="banner"
+      >
+        <!-- Dynamic Background -->
+        <div class="absolute inset-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-azu-purple via-azu-indigo to-azu-dark opacity-70"
+          ></div>
+          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+          <!-- Animated background elements -->
+          <div
+<div
+            class="absolute top-20 left-10 w-32 h-32 bg-azu-accent opacity-10 rounded-full animate-pulse"
+          ></div>
+          <div
+            class="absolute bottom-32 right-16 w-24 h-24 bg-azu-purple opacity-20 rounded-full animate-pulse delay-1000"
+          ></div>
+<img
+  src="./new_picture/IMG_4304.jpg"
+  alt="AZU Hero Background"
+  class="absolute inset-0 w-full h-full object-cover opacity-60"
+  loading="eager"
+/>
+          <div
+            class="absolute top-1/2 left-1/4 w-16 h-16 bg-azu-indigo opacity-15 rounded-full animate-pulse delay-500"
+          ></div>
+        </div>
+
+        <!-- Hero content -->
+        <div
+          class="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8"
+        >
+          <div class="text-center max-w-4xl mx-auto">
+            <!-- Main title with enhanced styling -->
+            <div class="mb-8">
+              <h1
+                class="text-7xl sm:text-8xl lg:text-9xl font-display font-bold text-white mb-4 animate-fade-in tracking-wider"
+              >
+                AZU
+              </h1>
+              <div
+                class="w-32 h-1 bg-gradient-to-r from-azu-purple to-azu-accent mx-auto mb-6"
+              ></div>
+              <p
+                class="text-2xl sm:text-3xl lg:text-4xl text-gray-200 font-light tracking-wide animate-fade-in-delay"
+              >
+                Artist & Musician
+              </p>
+            </div>
+
+            <!-- Enhanced description -->
+            <p
+              class="text-lg sm:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in-delay"
+            >
+              Creating immersive soundscapes that blend artistic vision with
+              contemporary beats. Experience the journey through music that
+              speaks to the soul.
+            </p>
+
+            <!-- Call to action buttons -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay"
+            >
+              <a
+                href="#music"
+                class="bg-azu-purple hover:bg-azu-indigo text-white px-10 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-purple shadow-lg"
+              >
+                Explore Music
+              </a>
+              <a
+                href="#story"
+                class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-azu-dark px-10 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white"
+              >
+                My Journey
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enhanced scroll indicator -->
+        <div
+          class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+        >
+          <div class="flex flex-col items-center text-white opacity-70">
+            <span class="text-sm mb-2 font-light">Scroll to explore</span>
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- About Section -->
+      <section id="about" class="py-20 bg-azu-darker">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-4xl sm:text-5xl font-display font-bold text-center text-white mb-16"
+          >
+            About
+          </h2>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <img
+                src="./new_picture/_DSC7746.jpg"
+                alt="AZU"
+                class="w-full max-w-md mx-auto rounded-lg shadow-2xl"
+                loading="lazy"
+              />
+            </div>
+            <div class="prose prose-lg prose-invert">
+              <p class="text-gray-300 leading-relaxed text-lg mb-6">
+                AZU is an innovative artist and musician who creates immersive
+                musical experiences that blend artistic vision with contemporary
+                sound. Drawing inspiration from urban landscapes and midnight
+                dreams, AZU's music captures the essence of modern life while
+                maintaining a timeless artistic quality.
+              </p>
+              <p class="text-gray-300 leading-relaxed text-lg mb-8">
+                With a unique approach to songwriting and production, AZU has
+                quickly gained recognition for creating atmospheric soundscapes
+                that resonate with listeners across the globe. Each release
+                tells a story, each beat carries emotion, and every melody
+                connects souls.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href="https://instagram.com/azu_official"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-400 hover:text-azu-purple transition-colors duration-200"
+                  aria-label="Instagram"
+                >
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-2.508 0-4.541-2.033-4.541-4.541s2.033-4.541 4.541-4.541 4.541 2.033 4.541 4.541-2.033 4.541-4.541 4.541zm7.49-8.094c-.587 0-1.063-.476-1.063-1.063s.476-1.063 1.063-1.063 1.063.476 1.063 1.063-.476 1.063-1.063 1.063z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://open.spotify.com/artist/azu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-400 hover:text-azu-purple transition-colors duration-200"
+                  aria-label="Spotify"
+                >
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://twitter.com/azu_music"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-400 hover:text-azu-purple transition-colors duration-200"
+                  aria-label="Twitter"
+                >
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://youtube.com/c/azumusic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-400 hover:text-azu-purple transition-colors duration-200"
+                  aria-label="YouTube"
+                >
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Story Section -->
+      <section id="story" class="py-20 bg-azu-darker relative overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0">
+          <div
+            class="absolute top-10 right-10 w-64 h-64 bg-azu-purple opacity-5 rounded-full blur-3xl"
+          ></div>
+          <div
+            class="absolute bottom-20 left-10 w-48 h-48 bg-azu-indigo opacity-5 rounded-full blur-2xl"
+          ></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Section Header -->
+          <div class="text-center mb-20">
+            <h2
+              class="text-4xl sm:text-5xl font-display font-bold text-white mb-6"
+            >
+              My Story
+            </h2>
+            <div
+              class="w-24 h-1 bg-gradient-to-r from-azu-purple to-azu-accent mx-auto mb-6"
+            ></div>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Every beat tells a story, every melody carries a memory. This is
+              the journey of AZU - from dreams to reality, through music and
+              passion.
+            </p>
+          </div>
+
+          <!-- Timeline -->
+          <div class="relative">
+            <!-- Vertical line (hidden on mobile, visible on desktop) -->
+            <div
+              class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-azu-purple via-azu-indigo to-azu-accent hidden lg:block"
+            ></div>
+
+            <!-- Story Timeline Items -->
+            <div class="space-y-12 lg:space-y-16">
+              <!-- Story Item 1 - The Beginning -->
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <!-- Content (left on desktop, full width on mobile) -->
+                <div class="w-full lg:w-5/12 lg:text-right lg:pr-8 mb-6 lg:mb-0">
+                  <div
+                    class="bg-azu-gray-light rounded-lg p-4 sm:p-6 shadow-xl border border-azu-gray hover:border-azu-purple transition-all duration-300"
+                  >
+                    <h3 class="text-xl sm:text-2xl font-display font-bold text-white mb-3">
+                      The Beginning
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed mb-4 text-sm sm:text-base">
+                      It all started with a simple dream and a passion for
+                      creating sounds that move the soul. Late nights in a small
+                      room, experimenting with beats and melodies that would
+                      later become the foundation of AZU's unique sound.
+                    </p>
+                    <span class="text-azu-purple font-medium text-sm sm:text-base">2020 - 2021</span>
+                  </div>
+                </div>
+                
+                <!-- Timeline dot (centered on desktop, left-aligned on mobile) -->
+                <div class="w-full lg:w-2/12 flex justify-center lg:justify-center mb-6 lg:mb-0">
+                  <div
+                    class="w-4 h-4 sm:w-6 sm:h-6 bg-azu-purple rounded-full border-2 sm:border-4 border-azu-dark shadow-lg"
+                  ></div>
+                </div>
+                
+                <!-- Image (right on desktop, full width on mobile) -->
+                <div class="w-full lg:w-5/12 lg:pl-8">
+                  <div class="bg-azu-gray rounded-lg p-3 sm:p-4 shadow-lg">
+                    <img
+                      src="./new_picture/IMG_0317.jpeg"
+                      alt="Early days"
+                      class="w-full h-40 sm:h-48 object-cover rounded-lg"
+                      loading="lazy"
+                      onerror="this.src='https://picsum.photos/400/300?random=1'"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Story Item 2 - First Breakthrough -->
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <!-- Image (left on desktop, full width on mobile) -->
+                <div class="w-full lg:w-5/12 lg:pr-8 mb-6 lg:mb-0 order-2 lg:order-1">
+                  <div class="bg-azu-gray rounded-lg p-3 sm:p-4 shadow-lg">
+                    <img
+                      src="./new_picture/IMG_4303.jpg"
+                      alt="First album"
+                      class="w-full h-40 sm:h-48 object-cover rounded-lg"
+                      loading="lazy"
+                      onerror="this.src='https://picsum.photos/400/300?random=2'"
+                    />
+                  </div>
+                </div>
+                
+                <!-- Timeline dot -->
+                <div class="w-full lg:w-2/12 flex justify-center mb-6 lg:mb-0 order-1 lg:order-2">
+                  <div
+                    class="w-4 h-4 sm:w-6 sm:h-6 bg-azu-indigo rounded-full border-2 sm:border-4 border-azu-dark shadow-lg"
+                  ></div>
+                </div>
+                
+                <!-- Content (right on desktop, full width on mobile) -->
+                <div class="w-full lg:w-5/12 lg:pl-8 order-3">
+                  <div
+                    class="bg-azu-gray-light rounded-lg p-4 sm:p-6 shadow-xl border border-azu-gray hover:border-azu-indigo transition-all duration-300"
+                  >
+                    <h3 class="text-xl sm:text-2xl font-display font-bold text-white mb-3">
+                      First Breakthrough
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed mb-4 text-sm sm:text-base">
+                      The release of "ATHOUT" marked a turning point. This
+                      wasn't just music; it was an emotional journey that
+                      resonated with listeners worldwide. The unique blend of
+                      contemporary beats with artistic vision caught the
+                      attention of music lovers everywhere.
+                    </p>
+                    <span class="text-azu-indigo font-medium text-sm sm:text-base">2022</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Story Item 3 - Evolution -->
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <!-- Content (left on desktop, full width on mobile) -->
+                <div class="w-full lg:w-5/12 lg:text-right lg:pr-8 mb-6 lg:mb-0">
+                  <div
+                    class="bg-azu-gray-light rounded-lg p-4 sm:p-6 shadow-xl border border-azu-gray hover:border-azu-accent transition-all duration-300"
+                  >
+                    <h3 class="text-xl sm:text-2xl font-display font-bold text-white mb-3">
+                      Musical Evolution
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed mb-4 text-sm sm:text-base">
+                      With releases like "BOTHOFUS", "CHOCHORO", and "HEART &
+                      SPACE", AZU's sound evolved into something truly unique.
+                      Each album told a different story, explored new emotions,
+                      and pushed the boundaries of contemporary music.
+                    </p>
+                    <span class="text-azu-accent font-medium text-sm sm:text-base">2023</span>
+                  </div>
+                </div>
+                
+                <!-- Timeline dot -->
+                <div class="w-full lg:w-2/12 flex justify-center mb-6 lg:mb-0">
+                  <div
+                    class="w-4 h-4 sm:w-6 sm:h-6 bg-azu-accent rounded-full border-2 sm:border-4 border-azu-dark shadow-lg"
+                  ></div>
+                </div>
+                
+                <!-- Album grid (right on desktop, full width on mobile) -->
+                <div class="w-full lg:w-5/12 lg:pl-8">
+                  <div class="grid grid-cols-2 gap-2">
+                    <img
+                      src="./new_picture/IMG_0322.jpg"
+                      alt="BOTHOFUS"
+                      class="w-full h-20 sm:h-24 object-cover rounded-lg shadow-md"
+                      loading="lazy"
+                    />
+                    <img
+                      src="./new_picture/IMG_3035.jpg"
+                      alt="CHOCHORO"
+                      class="w-full h-20 sm:h-24 object-cover rounded-lg shadow-md"
+                      loading="lazy"
+                    />
+                    <img
+                      src="./new_picture/IMG_4293.jpg"
+                      alt="HEART & SPACE"
+                      class="w-full h-20 sm:h-24 object-cover rounded-lg shadow-md"
+                      loading="lazy"
+                    />
+                    <img
+                      src="./new_picture/IMG_4293.jpg"
+                      alt="PICHANA"
+                      class="w-full h-20 sm:h-24 object-cover rounded-lg shadow-md"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Story Item 4 - Present Day -->
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <!-- Image (left on desktop, full width on mobile) -->
+                <div class="w-full lg:w-5/12 lg:pr-8 mb-6 lg:mb-0 order-2 lg:order-1">
+                  <div class="bg-azu-gray rounded-lg p-3 sm:p-4 shadow-lg">
+                    <img
+                      src="./new_picture/IMG_4301.jpg"
+                      alt="Present day AZU"
+                      class="w-full h-40 sm:h-48 object-cover rounded-lg"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                
+                <!-- Timeline dot -->
+                <div class="w-full lg:w-2/12 flex justify-center mb-6 lg:mb-0 order-1 lg:order-2">
+                  <div
+                    class="w-4 h-4 sm:w-6 sm:h-6 bg-gradient-to-r from-azu-purple to-azu-accent rounded-full border-2 sm:border-4 border-azu-dark shadow-lg animate-pulse"
+                  ></div>
+                </div>
+                
+                <!-- Content (right on desktop, full width on mobile) -->
+                <div class="w-full lg:w-5/12 lg:pl-8 order-3">
+                  <div
+                    class="bg-azu-gray-light rounded-lg p-4 sm:p-6 shadow-xl border border-azu-gray hover:border-azu-purple transition-all duration-300"
+                  >
+                    <h3 class="text-xl sm:text-2xl font-display font-bold text-white mb-3">
+                      The Journey Continues
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed mb-4 text-sm sm:text-base">
+                      Today, AZU continues to create music that transcends
+                      boundaries. With a growing fanbase and recognition in the
+                      industry, the journey is far from over. Each new release
+                      brings fresh perspectives and innovative sounds that keep
+                      pushing the envelope.
+                    </p>
+                    <span class="text-azu-purple font-medium text-sm sm:text-base"
+                      >2024 - Present</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="text-center mt-20 px-4 sm:px-0">
+            <div
+              class="bg-azu-gray-light rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto border border-azu-gray"
+            >
+              <h3 class="text-xl sm:text-2xl font-display font-bold text-white mb-4">
+                Be Part of the Story
+              </h3>
+              <p class="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base"></p>
+                Every listener becomes part of AZU's journey. Experience the
+                music, feel the emotions, and become part of a community that
+                celebrates artistic expression.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="#music"
+                  class="bg-azu-purple hover:bg-azu-indigo text-white px-6 sm:px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-purple w-full sm:w-auto"
+                >
+                  Listen Now
+                </a>
+                <a
+                  href="#contact"
+                  class="bg-transparent border-2 border-azu-accent text-azu-accent hover:bg-azu-accent hover:text-white px-6 sm:px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-accent w-full sm:w-auto"
+                >
+                  Connect With AZU
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Music Section -->
+      <section id="music" class="py-20 bg-azu-gray" role="main">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-4xl sm:text-5xl font-display font-bold text-center text-white mb-16"
+          >
+            Music
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Album 1: ATHOUT -->
+            <div
+              class="bg-azu-gray-light rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="./new_picture/COVER ARTS -MUSIC/AXT  EP.png"
+                  alt="ATHOUT"
+                  class="w-full h-64 object-cover"
+                  loading="lazy"
+                  onerror="this.src='https://picsum.photos/400/300?random=3'"
+                />
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"
+                >
+                  <a href="https://www.youtube.com/watch?v=ATHOUT" target="_blank" rel="noopener noreferrer">
+                  <div
+                    class="bg-azu-purple hover:bg-azu-indigo text-white rounded-full p-4 transform hover:scale-110 transition-all duration-200"
+                  >
+                    <svg
+                      class="w-8 h-8"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M8 5v10l8-5-8-5z" />
+                    </svg>
+                  </div>
+                  </a>
+              </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-white mb-2">AXT EP</h3>
+                <p class="text-gray-400 mb-4">3 tracks</p>
+                <div class="space-y-2">
+                  <div
+                    class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    <span>ATHOUT PT</span>
+                    <span>3:45</span>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    <span>ATHOUT PT 2</span>
+                    <span>4:12</span>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    <span>ATHOUT PT3</span>
+                    <span>3:28</span>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <button
+                    class="w-full bg-azu-purple hover:bg-azu-indigo text-white py-3 px-4 rounded-md transition-all duration-300 flex items-center justify-center space-x-2"
+                    onclick="showMusicPlatforms('athout-platforms')"
+                  >
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path>
+                    </svg>
+                    <span>Listen</span>
+                  </button>
+                  <div id="athout-platforms" class="hidden mt-3 grid grid-cols-3 gap-2">
+                  <a
+                      href="https://open.spotify.com/album/athout" target="_blank" rel="noopener noreferrer"
+                      class="bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                  >
+                      Spotify
+                  </a>
+                    <a
+                      href="https://music.apple.com/album/athout" target="_blank" rel="noopener noreferrer"
+                      class="bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                    >
+                    Apple
+                  </a>
+                    <a
+                      href="https://www.youtube.com/watch?v=ATHOUT" target="_blank" rel="noopener noreferrer"
+                      class="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                    >
+                    YouTube
+                  </a>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Album 2: BOTHOFUS -->
+            <div
+          class="bg-azu-gray-light rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <div class="relative">
+            <img
+                  src="./new_picture/COVER ARTS -MUSIC/ENDELEA.png"
+                  alt="BOTHOFUS"
+              class="w-full h-64 object-cover"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"
+            >
+                  <a href="https://www.youtube.com/watch?v=ENDELEA" target="_blank" rel="noopener noreferrer">
+              <div
+                class="bg-azu-purple hover:bg-azu-indigo text-white rounded-full p-4 transform hover:scale-110 transition-all duration-200"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M8 5v10l8-5-8-5z" />
+                </svg>
+              </div>
+                  </a>
+          </div>
+              </div>
+        <div class="p-6">
+                <h3 class="text-xl font-bold text-white mb-2">ENDELEA</h3>
+                <p class="text-gray-400 mb-4">3 tracks</p>
+          <div class="space-y-2">
+            <div
+              class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+            >
+                    <span>BOTHOFUS APT 2</span>
+                    <span>4:05</span>
+            </div>
+            <div
+              class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+            >
+                    <span>BOTHOFUS APT 3</span>
+                    <span>3:52</span>
+            </div>
+                  <div
+            class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+          >
+                    <span>BOTHOFUS APT 4</span>
+                    <span>4:33</span>
+          </div>
+                </div>
+                <div class="mt-6">
+                  <button
+                    class="w-full bg-azu-purple hover:bg-azu-indigo text-white py-3 px-4 rounded-md transition-all duration-300 flex items-center justify-center space-x-2"
+                    onclick="showMusicPlatforms('endelea-platforms')"
+          >
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path>
+                    </svg>
+                    <span>Listen</span>
+                  </button>
+                  <div id="endelea-platforms" class="hidden mt-3 grid grid-cols-3 gap-2">
+          <a
+                      href="https://open.spotify.com/album/endelea" target="_blank" rel="noopener noreferrer"
+                      class="bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+          >
+            Spotify
+          </a>
+          <a
+                      href="https://music.apple.com/album/endelea" target="_blank" rel="noopener noreferrer"
+                      class="bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+          >
+                      Apple
+          </a>
+                    <a
+                      href="https://www.youtube.com/watch?v=ENDELEA" target="_blank" rel="noopener noreferrer"
+                      class="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                    >
+                      YouTube
+                    </a>
+        </div>
+      </div>
+    </div>
+          </div>
+
+            <!-- Album 3: CHOCHORO -->
+            <div
+              class="bg-azu-gray-light rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="./new_picture/COVER ARTS -MUSIC/ENTIRELY.png"
+                  alt="CHOCHORO"
+                  class="w-full h-64 object-cover"
+                  loading="lazy"
+                />
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"
+                >
+                  <a href="https://www.youtube.com/watch?v=ENTIRELY" target="_blank" rel="noopener noreferrer">
+                    <div
+                      class="bg-azu-purple hover:bg-azu-indigo text-white rounded-full p-4 transform hover:scale-110 transition-all duration-200"
+                    >
+                      <svg
+                        class="w-8 h-8"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M8 5v10l8-5-8-5z" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-white mb-2">ENTIRELY</h3>
+                <p class="text-gray-400 mb-4">3 tracks</p>
+                <div class="space-y-2">
+                  <div
+                    class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    <span>CHOCHORO PT</span>
+                    <span>3:22</span>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    <span>CHOCHORO SPED UP</span>
+                    <span>2:45</span>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    <span>CHOCHORO (X-MOD)</span>
+                    <span>4:15</span>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <button
+                    class="w-full bg-azu-purple hover:bg-azu-indigo text-white py-3 px-4 rounded-md transition-all duration-300 flex items-center justify-center space-x-2"
+                    onclick="showMusicPlatforms('entirely-platforms')"
+                  >
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path>
+                    </svg>
+                    <span>Listen</span>
+                  </button>
+                  <div id="entirely-platforms" class="hidden mt-3 grid grid-cols-3 gap-2">
+                    <a
+                      href="https://open.spotify.com/album/entirely" target="_blank" rel="noopener noreferrer"
+                      class="bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                    >
+                      Spotify
+                    </a>
+                    <a
+                      href="https://music.apple.com/album/entirely" target="_blank" rel="noopener noreferrer"
+                      class="bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                    >
+                      Apple
+                    </a>
+                    <a
+                      href="https://www.youtube.com/watch?v=ENTIRELY" target="_blank" rel="noopener noreferrer"
+                      class="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                    >
+                      YouTube
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Album 4: HEART & SPACE -->
+            <div
+              class="bg-azu-gray-light rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="./new_picture/COVER ARTS -MUSIC/KISINGIZIO.png"
+                  alt="HEART & SPACE"
+                  class="w-full h-64 object-cover"
+                  loading="lazy"
+                />
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"
+                >
+                  <a href="https://www.youtube.com/watch?v=KISINGIZIO" target="_blank" rel="noopener noreferrer">
+                    <div
+                      class="bg-azu-purple hover:bg-azu-indigo text-white rounded-full p-4 transform hover:scale-110 transition-all duration-200"
+                    >
+                      <svg
+                        class="w-8 h-8"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M8 5v10l8-5-8-5z" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-white mb-2">KISINGIZIO</h3>
+                <p class="text-gray-400 mb-4">2 tracks</p>
+                <div class="space-y-2">
+                  <div
+                    class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    <span>HEART & SPACE PT</span>
+                    <span>4:28</span>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    <span>HEART & SPACE 2</span>
+                    <span>3:55</span>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <button
+                    class="w-full bg-azu-purple hover:bg-azu-indigo text-white py-3 px-4 rounded-md transition-all duration-300 flex items-center justify-center space-x-2"
+                    onclick="showMusicPlatforms('kisingizio-platforms')"
+                  >
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path>
+                    </svg>
+                    <span>Listen</span>
+                  </button>
+                  <div id="kisingizio-platforms" class="hidden mt-3 grid grid-cols-3 gap-2">
+                    <a
+                      href="https://open.spotify.com/album/kisingizio" target="_blank" rel="noopener noreferrer"
+                      class="bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                    >
+                      Spotify
+                    </a>
+                    <a
+                      href="https://music.apple.com/album/kisingizio" target="_blank" rel="noopener noreferrer"
+                      class="bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                    >
+                      Apple
+                    </a>
+                    <a
+                      href="https://www.youtube.com/watch?v=KISINGIZIO" target="_blank" rel="noopener noreferrer"
+                      class="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                    >
+                      YouTube
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MORE DISTRACTIONS -->
+            <div
+            class="bg-azu-gray-light rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+          >
+            <div class="relative">
+              <img
+                src="./new_picture/COVER ARTS -MUSIC/MORE DISTRACTIONZ (Slowed & Reverb).png"
+                alt="HEART & SPACE"
+                class="w-full h-64 object-cover"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"
+              >
+                <a href="https://www.youtube.com/watch?v=MOREDISTRACTIONS" target="_blank" rel="noopener noreferrer">
+                  <div
+                    class="bg-azu-purple hover:bg-azu-indigo text-white rounded-full p-4 transform hover:scale-110 transition-all duration-200"
+                  >
+                    <svg
+                      class="w-8 h-8"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M8 5v10l8-5-8-5z" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2">MORE DISTRACTIONS</h3>
+              <p class="text-gray-400 mb-4">2 tracks</p>
+              <div class="space-y-2">
+                <div
+                  class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+                >
+                  <span>HEART & SPACE PT</span>
+                  <span>4:28</span>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+                >
+                  <span>HEART & SPACE 2</span>
+                  <span>3:55</span>
+                </div>
+              </div>
+              <div class="mt-6">
+                <button
+                  class="w-full bg-azu-purple hover:bg-azu-indigo text-white py-3 px-4 rounded-md transition-all duration-300 flex items-center justify-center space-x-2"
+                  onclick="showMusicPlatforms('distractions-platforms')"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path>
+                  </svg>
+                  <span>Listen</span>
+                </button>
+                <div id="distractions-platforms" class="hidden mt-3 grid grid-cols-3 gap-2">
+                  <a
+                    href="https://open.spotify.com/album/moredistractions" target="_blank" rel="noopener noreferrer"
+                    class="bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                  >
+                    Spotify
+                  </a>
+                  <a
+                    href="https://music.apple.com/album/moredistractions" target="_blank" rel="noopener noreferrer"
+                    class="bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                  >
+                    Apple
+                  </a>
+                  <a
+                    href="https://www.youtube.com/watch?v=MOREDISTRACTIONS" target="_blank" rel="noopener noreferrer"
+                    class="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                  >
+                    YouTube
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- REASONS -->
+          <div
+          class="bg-azu-gray-light rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <div class="relative">
+            <img
+              src="./new_picture/COVER ARTS -MUSIC/REAZONS.png"
+              alt="HEART & SPACE"
+              class="w-full h-64 object-cover"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"
+            >
+              <a href="https://www.youtube.com/watch?v=REASONS" target="_blank" rel="noopener noreferrer">
+                <div
+                  class="bg-azu-purple hover:bg-azu-indigo text-white rounded-full p-4 transform hover:scale-110 transition-all duration-200"
+                >
+                  <svg
+                    class="w-8 h-8"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M8 5v10l8-5-8-5z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">REASONS</h3>
+            <p class="text-gray-400 mb-4">2 tracks</p>
+            <div class="space-y-2">
+              <div
+                class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                <span>HEART & SPACE PT</span>
+                <span>4:28</span>
+              </div>
+              <div
+                class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                <span>HEART & SPACE 2</span>
+                <span>3:55</span>
+              </div>
+            </div>
+            <div class="mt-6">
+              <button
+                class="w-full bg-azu-purple hover:bg-azu-indigo text-white py-3 px-4 rounded-md transition-all duration-300 flex items-center justify-center space-x-2"
+                onclick="showMusicPlatforms('reasons-platforms')"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path>
+                </svg>
+                <span>Listen</span>
+              </button>
+              <div id="reasons-platforms" class="hidden mt-3 grid grid-cols-3 gap-2">
+                <a
+                  href="https://open.spotify.com/album/reasons" target="_blank" rel="noopener noreferrer"
+                  class="bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                >
+                  Spotify
+                </a>
+                <a
+                  href="https://music.apple.com/album/reasons" target="_blank" rel="noopener noreferrer"
+                  class="bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                >
+                  Apple
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=REASONS" target="_blank" rel="noopener noreferrer"
+                  class="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+                >
+                  YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- WHAT IF -->
+        <div
+        class="bg-azu-gray-light rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+      >
+        <div class="relative">
+          <img
+            src="./new_picture/COVER ARTS -MUSIC/WHAT IF .png"
+            alt="HEART & SPACE"
+            class="w-full h-64 object-cover"
+            loading="lazy"
+          />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"
+          >
+            <a href="https://www.youtube.com/watch?v=WHATIF" target="_blank" rel="noopener noreferrer">
+              <div
+                class="bg-azu-purple hover:bg-azu-indigo text-white rounded-full p-4 transform hover:scale-110 transition-all duration-200"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M8 5v10l8-5-8-5z" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white mb-2">WHAT IF</h3>
+          <p class="text-gray-400 mb-4">2 tracks</p>
+          <div class="space-y-2">
+            <div
+              class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+            >
+              <span>HEART & SPACE PT</span>
+              <span>4:28</span>
+            </div>
+            <div
+              class="flex items-center justify-between text-sm text-gray-300 hover:text-white transition-colors duration-200"
+            >
+              <span>HEART & SPACE 2</span>
+              <span>3:55</span>
+            </div>
+          </div>
+          <div class="mt-6">
+            <button
+              class="w-full bg-azu-purple hover:bg-azu-indigo text-white py-3 px-4 rounded-md transition-all duration-300 flex items-center justify-center space-x-2"
+              onclick="showMusicPlatforms('whatif-platforms')"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path>
+              </svg>
+              <span>Listen</span>
+            </button>
+            <div id="whatif-platforms" class="hidden mt-3 grid grid-cols-3 gap-2">
+              <a
+                href="https://open.spotify.com/album/whatif" target="_blank" rel="noopener noreferrer"
+                class="bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+              >
+                Spotify
+              </a>
+              <a
+                href="https://music.apple.com/album/whatif" target="_blank" rel="noopener noreferrer"
+                class="bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+              >
+                Apple
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=WHATIF" target="_blank" rel="noopener noreferrer"
+                class="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-xs transition-colors duration-200 text-center"
+              >
+                YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+          </div>
+          
+          <!-- JavaScript for toggling music platforms -->
+          <script>
+            function showMusicPlatforms(id) {
+              const element = document.getElementById(id);
+              if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+              } else {
+                element.classList.add('hidden');
+              }
+            }
+          </script>
+        </div>
+      </section>
+
+      
+
+      <!-- Merch Section -->
+      <section id="merch" class="py-20 bg-azu-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-4xl sm:text-5xl font-display font-bold text-center text-white mb-16"
+          >
+            Merchandise
+          </h2>
+          <p class="text-xl text-gray-300 text-center mb-12 max-w-3xl mx-auto">
+            Show your love for AZU with exclusive merchandise inspired by the
+            music and artistic vision
+          </p>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+          >
+            <!-- Merch Item 1: ATHOUT Album T-Shirt -->
+            <div
+              class="bg-azu-gray-light rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="./images/wallsssss/ATHOUT PT.webp"
+                  alt="ATHOUT Album T-Shirt"
+                  class="w-full h-64 object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute top-2 right-2">
+                  <span
+                    class="bg-azu-purple bg-opacity-90 text-white px-2 py-1 rounded-full text-xs font-medium"
+                  >
+                    Apparel
+                  </span>
+                </div>
+                <div class="absolute top-2 left-2">
+                  <span
+                    class="bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold"
+                  >
+                    NEW
+                  </span>
+                </div>
+                <div class="absolute bottom-2 left-2">
+                  <span
+                    class="bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold"
+                  >
+                    25% OFF
+                  </span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-white mb-2">
+                  ATHOUT Album T-Shirt
+                </h3>
+                <p class="text-gray-400 text-sm mb-3">
+                  Premium cotton t-shirt featuring the iconic ATHOUT album
+                  artwork design
+                </p>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="flex items-center space-x-2">
+                    <span class="text-gray-500 line-through text-sm"
+                      >$39.99</span
+                    >
+                    <span class="text-white font-bold text-lg">$29.99</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <span class="text-yellow-400">★★★★☆</span>
+                    <span class="text-gray-400 text-sm">(23)</span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <p class="text-gray-400 text-xs mb-1">Available sizes:</p>
+                  <div class="flex space-x-1">
+                    <span
+                      class="bg-azu-gray text-white px-2 py-1 rounded text-xs"
+                      >S</span
+                    >
+                    <span
+                      class="bg-azu-gray text-white px-2 py-1 rounded text-xs"
+                      >M</span
+                    >
+                    <span
+                      class="bg-azu-gray text-white px-2 py-1 rounded text-xs"
+                      >L</span
+                    >
+                    <span
+                      class="bg-azu-gray text-white px-2 py-1 rounded text-xs"
+                      >XL</span
+                    >
+                    <span
+                      class="bg-azu-gray text-white px-2 py-1 rounded text-xs"
+                      >XXL</span
+                    >
+                  </div>
+                </div>
+                <div class="flex space-x-2">
+                  <a
+                    href="#"
+                    class="flex-1 bg-azu-purple hover:bg-azu-indigo text-white font-medium py-2 px-4 rounded-md transition-colors duration-200 text-center"
+                  >
+                    Add to Cart
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-azu-gray hover:bg-azu-darker text-white p-2 rounded-md transition-colors duration-200"
+                  >
+                    ♡
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Merch Item 2: BOTHOFUS Vinyl Record -->
+            <div
+              class="bg-azu-gray-light rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="./images/wallsssss/BOTHOFUS YT.webp"
+                  alt="BOTHOFUS Vinyl Record"
+                  class="w-full h-64 object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute top-2 right-2">
+                  <span
+                    class="bg-azu-purple bg-opacity-90 text-white px-2 py-1 rounded-full text-xs font-medium"
+                  >
+                    Music
+                  </span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-white mb-2">
+                  BOTHOFUS Vinyl Record
+                </h3>
+                <p class="text-gray-400 text-sm mb-3">
+                  Limited edition vinyl pressing of AZU's BOTHOFUS album with
+                  exclusive artwork
+                </p>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-white font-bold text-lg">$34.99</span>
+                  <div class="flex items-center space-x-1">
+                    <span class="text-yellow-400">★★★★★</span>
+                    <span class="text-gray-400 text-sm">(18)</span>
+                  </div>
+                </div>
+                <div class="flex space-x-2">
+                  <a
+                    href="#"
+                    class="flex-1 bg-azu-purple hover:bg-azu-indigo text-white font-medium py-2 px-4 rounded-md transition-colors duration-200 text-center"
+                  >
+                    Add to Cart
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-azu-gray hover:bg-azu-darker text-white p-2 rounded-md transition-colors duration-200"
+                  >
+                    ♡
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Merch Item 3: CHOCHORO Art Poster -->
+            <div
+              class="bg-azu-gray-light rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="./images/wallsssss/CHOCHORO PT.webp"
+                  alt="CHOCHORO Art Poster"
+                  class="w-full h-64 object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute top-2 right-2">
+                  <span
+                    class="bg-azu-purple bg-opacity-90 text-white px-2 py-1 rounded-full text-xs font-medium"
+                  >
+                    Collectibles
+                  </span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-white mb-2">
+                  CHOCHORO Art Poster
+                </h3>
+                <p class="text-gray-400 text-sm mb-3">
+                  High-quality art print featuring the CHOCHORO album artwork
+                </p>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-white font-bold text-lg">$19.99</span>
+                  <div class="flex items-center space-x-1">
+                    <span class="text-yellow-400">★★★★☆</span>
+                    <span class="text-gray-400 text-sm">(15)</span>
+                  </div>
+                </div>
+                <div class="flex space-x-2">
+                  <a
+                    href="#"
+                    class="flex-1 bg-azu-purple hover:bg-azu-indigo text-white font-medium py-2 px-4 rounded-md transition-colors duration-200 text-center"
+                  >
+                    Add to Cart
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-azu-gray hover:bg-azu-darker text-white p-2 rounded-md transition-colors duration-200"
+                  >
+                    ♡
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Merch Item 4: HEART & SPACE Hoodie -->
+            <div
+              class="bg-azu-gray-light rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="./images/wallsssss/HEART & SPACE 2.webp"
+                  alt="HEART & SPACE Hoodie"
+                  class="w-full h-64 object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute top-2 right-2">
+                  <span
+                    class="bg-azu-purple bg-opacity-90 text-white px-2 py-1 rounded-full text-xs font-medium"
+                  >
+                    Apparel
+                  </span>
+                </div>
+                <div class="absolute bottom-2 left-2">
+                  <span
+                    class="bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold"
+                  >
+                    17% OFF
+                  </span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-white mb-2">
+                  HEART & SPACE Hoodie
+                </h3>
+                <p class="text-gray-400 text-sm mb-3">
+                  Cozy pullover hoodie featuring the beautiful HEART & SPACE
+                  album artwork
+                </p>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="flex items-center space-x-2">
+                    <span class="text-gray-500 line-through text-sm"
+                      >$59.99</span
+                    >
+                    <span class="text-white font-bold text-lg">$49.99</span>
+                  </div>
+                  <div class="flex items-center space-x-1">
+                    <span class="text-yellow-400">★★★★☆</span>
+                    <span class="text-gray-400 text-sm">(31)</span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <p class="text-gray-400 text-xs mb-1">Available sizes:</p>
+                  <div class="flex space-x-1">
+                    <span
+                      class="bg-azu-gray text-white px-2 py-1 rounded text-xs"
+                      >S</span
+                    >
+                    <span
+                      class="bg-azu-gray text-white px-2 py-1 rounded text-xs"
+                      >M</span
+                    >
+                    <span
+                      class="bg-azu-gray text-white px-2 py-1 rounded text-xs"
+                      >L</span
+                    >
+                    <span
+                      class="bg-azu-gray text-white px-2 py-1 rounded text-xs"
+                      >XL</span
+                    >
+                  </div>
+                </div>
+                <div class="flex space-x-2">
+                  <a
+                    href="#"
+                    class="flex-1 bg-azu-purple hover:bg-azu-indigo text-white font-medium py-2 px-4 rounded-md transition-colors duration-200 text-center"
+                  >
+                    Add to Cart
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-azu-gray hover:bg-azu-darker text-white p-2 rounded-md transition-colors duration-200"
+                  >
+                    ♡
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Merch Categories Filter (Static) -->
+          <div class="flex flex-wrap justify-center gap-4 mt-12">
+            <span class="bg-azu-purple text-white px-6 py-2 rounded-full">
+              All Items
+            </span>
+            <span
+              class="bg-azu-gray-light hover:bg-azu-gray text-white px-6 py-2 rounded-full transition-colors duration-200 cursor-pointer"
+            >
+              Apparel
+            </span>
+            <span
+              class="bg-azu-gray-light hover:bg-azu-gray text-white px-6 py-2 rounded-full transition-colors duration-200 cursor-pointer"
+            >
+              Accessories
+            </span>
+            <span
+              class="bg-azu-gray-light hover:bg-azu-gray text-white px-6 py-2 rounded-full transition-colors duration-200 cursor-pointer"
+            >
+              Music & Media
+            </span>
+            <span
+              class="bg-azu-gray-light hover:bg-azu-gray text-white px-6 py-2 rounded-full transition-colors duration-200 cursor-pointer"
+            >
+              Collectibles
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section id="news" class="py-20 bg-azu-darker">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-4xl sm:text-5xl font-display font-bold text-center text-white mb-16"
+          >
+            News & Events
+          </h2>
+
+          <div class="space-y-8">
+            <!-- News Item 1 -->
+            <div
+              class="bg-azu-gray-light rounded-lg shadow-xl border border-azu-gray overflow-hidden"
+            >
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-4">
+                  <span
+                    class="bg-azu-purple bg-opacity-20 text-azu-purple px-3 py-1 rounded-full text-sm font-medium"
+                  >
+                    January 15, 2024
+                  </span>
+                  <span
+                    class="bg-green-500 bg-opacity-20 text-green-400 px-3 py-1 rounded-full text-xs font-bold"
+                  >
+                    NEW RELEASE
+                  </span>
+                </div>
+                <h3 class="text-2xl font-display font-bold text-white mb-3">
+                  New Single 'Electric Dreams' Released
+                </h3>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                  AZU's latest single 'Electric Dreams' is now available on all
+                  streaming platforms. The track showcases a new direction in
+                  AZU's artistic journey...
+                </p>
+
+                <!-- Expandable Content -->
+                <details class="group">
+                  <summary
+                    class="cursor-pointer text-azu-purple hover:text-azu-indigo font-medium transition-colors duration-200 list-none flex items-center"
+                  >
+                    <span>Read More</span>
+                    <svg
+                      class="w-4 h-4 ml-2 transform group-open:rotate-180 transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </summary>
+                  <div class="mt-4 pt-4 border-t border-azu-gray">
+                    <div class="prose prose-invert max-w-none">
+                      <p class="text-gray-300 leading-relaxed mb-4">
+                        This new single represents a significant evolution in
+                        AZU's sound, blending electronic elements with organic
+                        instrumentation in ways that haven't been explored
+                        before. The track was recorded over several months, with
+                        AZU experimenting with different production techniques
+                        and collaborating with various artists to achieve the
+                        perfect sound.
+                      </p>
+                      <p class="text-gray-300 leading-relaxed mb-4">
+                        "Electric Dreams" explores themes of modern life,
+                        technology, and human connection in the digital age. The
+                        lyrics reflect on how we navigate relationships and
+                        dreams in an increasingly connected yet isolated world.
+                      </p>
+                      <div class="bg-azu-gray rounded-lg p-4 mb-4">
+                        <h4 class="text-white font-semibold mb-2">
+                          Track Details:
+                        </h4>
+                        <ul class="text-gray-300 space-y-1">
+                          <li>• Duration: 4:23</li>
+                          <li>• Genre: Electronic/Alternative</li>
+                          <li>• Producer: AZU & Collaborators</li>
+                          <li>• Release Date: January 15, 2024</li>
+                        </ul>
+                      </div>
+                      <div class="flex space-x-4">
+                        <a
+                          href="#"
+                          class="bg-azu-purple hover:bg-azu-indigo text-white px-4 py-2 rounded-md transition-colors duration-200"
+                        >
+                          Listen on Spotify
+                        </a>
+                        <a
+                          href="#"
+                          class="bg-gray-600 hover:bg-gray-500 text-white px-4 py-2 rounded-md transition-colors duration-200"
+                        >
+                          Watch Music Video
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div
+              class="bg-azu-gray-light rounded-lg shadow-xl border border-azu-gray overflow-hidden"
+            >
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-4">
+                  <span
+                    class="bg-azu-indigo bg-opacity-20 text-azu-indigo px-3 py-1 rounded-full text-sm font-medium"
+                  >
+                    January 8, 2024
+                  </span>
+                  <span
+                    class="bg-red-500 bg-opacity-20 text-red-400 px-3 py-1 rounded-full text-xs font-bold"
+                  >
+                    TOUR ANNOUNCEMENT
+                  </span>
+                </div>
+                <h3 class="text-2xl font-display font-bold text-white mb-3">
+                  Upcoming Concert Tour Announced
+                </h3>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                  AZU will be embarking on a nationwide tour starting March
+                  2024. Tickets go on sale this Friday at 10 AM local time...
+                </p>
+
+                <!-- Expandable Content -->
+                <details class="group">
+                  <summary
+                    class="cursor-pointer text-azu-purple hover:text-azu-indigo font-medium transition-colors duration-200 list-none flex items-center"
+                  >
+                    <span>Read More</span>
+                    <svg
+                      class="w-4 h-4 ml-2 transform group-open:rotate-180 transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </summary>
+                  <div class="mt-4 pt-4 border-t border-azu-gray">
+                    <div class="prose prose-invert max-w-none">
+                      <p class="text-gray-300 leading-relaxed mb-4">
+                        This highly anticipated tour will span 15 cities across
+                        the country, bringing AZU's immersive live experience to
+                        fans nationwide. Each show will feature a unique setlist
+                        combining fan favorites with new material, including
+                        exclusive live arrangements of popular tracks.
+                      </p>
+                      <div class="bg-azu-gray rounded-lg p-4 mb-4">
+                        <h4 class="text-white font-semibold mb-3">
+                          Tour Dates & Venues:
+                        </h4>
+                        <div
+                          class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-300"
+                        >
+                          <div class="flex justify-between">
+                            <span>March 15 - New York</span>
+                            <span class="text-azu-purple"
+                              >Madison Square Garden</span
+                            >
+                          </div>
+                          <div class="flex justify-between">
+                            <span>March 18 - Los Angeles</span>
+                            <span class="text-azu-purple">Hollywood Bowl</span>
+                          </div>
+                          <div class="flex justify-between">
+                            <span>March 22 - Chicago</span>
+                            <span class="text-azu-purple">United Center</span>
+                          </div>
+                          <div class="flex justify-between">
+                            <span>March 25 - Miami</span>
+                            <span class="text-azu-purple"
+                              >AmericanAirlines Arena</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="bg-yellow-500 bg-opacity-10 border border-yellow-500 border-opacity-20 rounded-lg p-4 mb-4"
+                      >
+                        <p class="text-yellow-300 font-medium">
+                          🎫 Early bird tickets available with exclusive VIP
+                          packages including meet & greet opportunities!
+                        </p>
+                      </div>
+                      <div class="flex space-x-4">
+                        <a
+                          href="#"
+                          class="bg-azu-purple hover:bg-azu-indigo text-white px-4 py-2 rounded-md transition-colors duration-200"
+                        >
+                          Buy Tickets
+                        </a>
+                        <a
+                          href="#"
+                          class="bg-gray-600 hover:bg-gray-500 text-white px-4 py-2 rounded-md transition-colors duration-200"
+                        >
+                          View All Dates
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div
+              class="bg-azu-gray-light rounded-lg shadow-xl border border-azu-gray overflow-hidden"
+            >
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-4">
+                  <span
+                    class="bg-azu-accent bg-opacity-20 text-azu-accent px-3 py-1 rounded-full text-sm font-medium"
+                  >
+                    December 20, 2023
+                  </span>
+                  <span
+                    class="bg-yellow-500 bg-opacity-20 text-yellow-400 px-3 py-1 rounded-full text-xs font-bold"
+                  >
+                    MILESTONE
+                  </span>
+                </div>
+                <h3 class="text-2xl font-display font-bold text-white mb-3">
+                  HEART & SPACE Album Reaches Gold Status
+                </h3>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                  AZU's album 'HEART & SPACE' has officially reached gold
+                  certification, marking a significant milestone in the artist's
+                  career...
+                </p>
+
+                <!-- Expandable Content -->
+                <details class="group">
+                  <summary
+                    class="cursor-pointer text-azu-purple hover:text-azu-indigo font-medium transition-colors duration-200 list-none flex items-center"
+                  >
+                    <span>Read More</span>
+                    <svg
+                      class="w-4 h-4 ml-2 transform group-open:rotate-180 transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </summary>
+                  <div class="mt-4 pt-4 border-t border-azu-gray">
+                    <div class="prose prose-invert max-w-none">
+                      <p class="text-gray-300 leading-relaxed mb-4">
+                        This achievement represents more than just sales numbers
+                        - it's a testament to the deep connection AZU has forged
+                        with listeners worldwide. The album, which explores
+                        themes of love, space, and human connection, has
+                        resonated with fans across different demographics and
+                        musical preferences.
+                      </p>
+                      <div class="bg-azu-gray rounded-lg p-4 mb-4">
+                        <h4 class="text-white font-semibold mb-3">
+                          Album Statistics:
+                        </h4>
+                        <div class="grid grid-cols-2 gap-4 text-gray-300">
+                          <div>
+                            <span class="text-azu-purple font-medium"
+                              >500K+</span
+                            >
+                            <p class="text-sm">Units Sold</p>
+                          </div>
+                          <div>
+                            <span class="text-azu-purple font-medium"
+                              >50M+</span
+                            >
+                            <p class="text-sm">Streams</p>
+                          </div>
+                          <div>
+                            <span class="text-azu-purple font-medium">25</span>
+                            <p class="text-sm">Countries Charted</p>
+                          </div>
+                          <div>
+                            <span class="text-azu-purple font-medium">#3</span>
+                            <p class="text-sm">Peak Chart Position</p>
+                          </div>
+                        </div>
+                      </div>
+                      <blockquote
+                        class="border-l-4 border-azu-purple pl-4 italic text-gray-300 mb-4"
+                      >
+                        "Thank you to all the fans for your incredible support!
+                        This milestone belongs to everyone who has connected
+                        with the music and made it part of their journey." - AZU
+                      </blockquote>
+                      <div class="flex space-x-4">
+                        <a
+                          href="#"
+                          class="bg-azu-purple hover:bg-azu-indigo text-white px-4 py-2 rounded-md transition-colors duration-200"
+                        >
+                          Stream Album
+                        </a>
+                        <a
+                          href="#"
+                          class="bg-gray-600 hover:bg-gray-500 text-white px-4 py-2 rounded-md transition-colors duration-200"
+                        >
+                          Behind the Scenes
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 bg-azu-darker relative overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0">
+          <div class="absolute top-20 left-20 w-32 h-32 bg-azu-purple opacity-5 rounded-full blur-2xl"></div>
+          <div class="absolute bottom-32 right-32 w-24 h-24 bg-azu-indigo opacity-5 rounded-full blur-xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Section Header -->
+          <div class="text-center mb-16">
+            <h2 class="text-4xl sm:text-5xl font-display font-bold text-white mb-6">
+              Get in Touch
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-azu-purple to-azu-accent mx-auto mb-6"></div>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+              Ready to connect? Reach out through any of these channels. We'd love to hear from you!
+            </p>
+          </div>
+
+          <!-- Contact Information Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            
+            <!-- Contact Details -->
+            <div class="space-y-8">
+              
+              <!-- Phone Numbers -->
+              <div class="bg-azu-gray-light rounded-xl p-6 border border-azu-gray hover:border-azu-purple transition-all duration-300">
+                <div class="flex items-center mb-4">
+                  <div class="bg-azu-purple bg-opacity-20 p-3 rounded-lg mr-4">
+                    <svg class="w-6 h-6 text-azu-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-display font-bold text-white">Phone</h3>
+                </div>
+                <div class="space-y-2 ml-14">
+                  <div>
+                    <p class="text-gray-400 text-sm">Management</p>
+                    <a href="tel:+1234567890" class="text-white hover:text-azu-purple transition-colors duration-200 font-medium">
+                      +1 (234) 567-8900
+                    </a>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-sm">Booking & Events</p>
+                    <a href="tel:+1234567891" class="text-white hover:text-azu-purple transition-colors duration-200 font-medium">
+                      +1 (234) 567-8901
+                    </a>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-sm">Press & Media</p>
+                    <a href="tel:+1234567892" class="text-white hover:text-azu-purple transition-colors duration-200 font-medium">
+                      +1 (234) 567-8902
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email Addresses -->
+              <div class="bg-azu-gray-light rounded-xl p-6 border border-azu-gray hover:border-azu-indigo transition-all duration-300">
+                <div class="flex items-center mb-4">
+                  <div class="bg-azu-indigo bg-opacity-20 p-3 rounded-lg mr-4">
+                    <svg class="w-6 h-6 text-azu-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-display font-bold text-white">Email</h3>
+                </div>
+                <div class="space-y-2 ml-14">
+                  <div>
+                    <p class="text-gray-400 text-sm">General Inquiries</p>
+                    <a href="mailto:contact@azu-music.com" class="text-white hover:text-azu-indigo transition-colors duration-200 font-medium">
+                      contact@azu-music.com
+                    </a>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-sm">Business & Collaborations</p>
+                    <a href="mailto:business@azu-music.com" class="text-white hover:text-azu-indigo transition-colors duration-200 font-medium">
+                      business@azu-music.com
+                    </a>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-sm">Press & Media</p>
+                    <a href="mailto:press@azu-music.com" class="text-white hover:text-azu-indigo transition-colors duration-200 font-medium">
+                      press@azu-music.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="bg-azu-gray-light rounded-xl p-6 border border-azu-gray hover:border-azu-accent transition-all duration-300">
+                <div class="flex items-center mb-4">
+                  <div class="bg-azu-accent bg-opacity-20 p-3 rounded-lg mr-4">
+                    <svg class="w-6 h-6 text-azu-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-display font-bold text-white">Locations</h3>
+                </div>
+                <div class="space-y-4 ml-14">
+                  <div>
+                    <p class="text-gray-400 text-sm">Main Office</p>
+                    <p class="text-white font-medium">Los Angeles, CA</p>
+                    <p class="text-gray-300 text-sm">1234 Music Boulevard<br>Hollywood, CA 90028</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-sm">Recording Studio</p>
+                    <p class="text-white font-medium">Nashville, TN</p>
+                    <p class="text-gray-300 text-sm">567 Sound Avenue<br>Nashville, TN 37203</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-sm">European Office</p>
+                    <p class="text-white font-medium">London, UK</p>
+                    <p class="text-gray-300 text-sm">89 Abbey Road<br>London NW8 9AY, UK</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="space-y-8">
+              <div class="bg-azu-gray-light rounded-xl p-6 border border-azu-gray">
+                <div class="flex items-center mb-6">
+                  <div class="bg-gradient-to-r from-azu-purple to-azu-indigo bg-opacity-20 p-3 rounded-lg mr-4">
+                    <svg class="w-6 h-6 text-azu-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 0h10m-10 0a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2m-5 4v6m-3-3h6"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-display font-bold text-white">Follow AZU</h3>
+                </div>
+                
+                <!-- Social Media Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  
+                  <!-- Instagram -->
+                  <a href="https://instagram.com/azu_official" target="_blank" rel="noopener noreferrer" 
+                     class="flex items-center p-4 bg-azu-gray rounded-lg hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 transition-all duration-300 group">
+                    <svg class="w-6 h-6 text-gray-400 group-hover:text-white mr-3" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-2.508 0-4.541-2.033-4.541-4.541s2.033-4.541 4.541-4.541 4.541 2.033 4.541 4.541-2.033 4.541-4.541 4.541zm7.49-8.094c-.587 0-1.063-.476-1.063-1.063s.476-1.063 1.063-1.063 1.063.476 1.063 1.063-.476 1.063-1.063 1.063z"/>
+                    </svg>
+                    <div>
+                      <p class="text-white font-medium group-hover:text-white">Instagram</p>
+                      <p class="text-gray-400 text-sm group-hover:text-gray-200">@azu_official</p>
+                    </div>
+                  </a>
+
+                  <!-- Spotify -->
+                  <a href="https://open.spotify.com/artist/azu" target="_blank" rel="noopener noreferrer" 
+                     class="flex items-center p-4 bg-azu-gray rounded-lg hover:bg-green-600 transition-all duration-300 group">
+                    <svg class="w-6 h-6 text-gray-400 group-hover:text-white mr-3" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
+                    </svg>
+                    <div>
+                      <p class="text-white font-medium">Spotify</p>
+                      <p class="text-gray-400 text-sm group-hover:text-gray-200">Stream Music</p>
+                    </div>
+                  </a>
+
+                  <!-- YouTube -->
+                  <a href="https://youtube.com/@azumusic" target="_blank" rel="noopener noreferrer" 
+                     class="flex items-center p-4 bg-azu-gray rounded-lg hover:bg-red-600 transition-all duration-300 group">
+                    <svg class="w-6 h-6 text-gray-400 group-hover:text-white mr-3" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    <div>
+                      <p class="text-white font-medium">YouTube</p>
+                      <p class="text-gray-400 text-sm group-hover:text-gray-200">Music Videos</p>
+                    </div>
+                  </a>
+
+                  <!-- Twitter -->
+                  <a href="https://twitter.com/azu_music" target="_blank" rel="noopener noreferrer" 
+                     class="flex items-center p-4 bg-azu-gray rounded-lg hover:bg-blue-500 transition-all duration-300 group">
+                    <svg class="w-6 h-6 text-gray-400 group-hover:text-white mr-3" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                    <div>
+                      <p class="text-white font-medium">Twitter</p>
+                      <p class="text-gray-400 text-sm group-hover:text-gray-200">@azu_music</p>
+                    </div>
+                  </a>
+
+                  <!-- Apple Music -->
+                  <a href="https://music.apple.com/artist/azu" target="_blank" rel="noopener noreferrer" 
+                     class="flex items-center p-4 bg-azu-gray rounded-lg hover:bg-gray-800 transition-all duration-300 group">
+                    <svg class="w-6 h-6 text-gray-400 group-hover:text-white mr-3" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M23.997 6.124c0-.738-.065-1.47-.24-2.19-.317-1.31-1.062-2.31-2.18-3.043C21.003.517 20.373.285 19.7.164c-.517-.093-1.038-.135-1.564-.15-.04-.001-.083-.005-.124-.005H5.988c-.041 0-.084.004-.124.005-.526.015-1.047.057-1.564.15-.673.121-1.303.353-1.877.727C1.302 1.614.557 2.614.24 3.924.065 4.644 0 5.376 0 6.124v11.752c0 .748.065 1.48.24 2.2.317 1.31 1.062 2.31 2.18 3.043.574.374 1.204.606 1.877.727.517.093 1.038.135 1.564.15.04.001.083.005.124.005h12.124c.041 0 .084-.004.124-.005.526-.015 1.047-.057 1.564-.15.673-.121 1.303-.353 1.877-.727 1.118-.734 1.863-1.734 2.18-3.043.175-.72.24-1.452.24-2.2V6.124zM12.5 4.364c2.18 0 3.957 1.777 3.957 3.957 0 2.18-1.777 3.957-3.957 3.957S8.543 10.501 8.543 8.321c0-2.18 1.777-3.957 3.957-3.957zm0 6.878c1.608 0 2.921-1.313 2.921-2.921S14.108 5.4 12.5 5.4s-2.921 1.313-2.921 2.921 1.313 2.921 2.921 2.921z"/>
+                    </svg>
+                    <div>
+                      <p class="text-white font-medium">Apple Music</p>
+                      <p class="text-gray-400 text-sm group-hover:text-gray-200">Listen Now</p>
+                    </div>
+                  </a>
+
+                  <!-- TikTok -->
+                  <a href="https://tiktok.com/@azu_official" target="_blank" rel="noopener noreferrer" 
+                     class="flex items-center p-4 bg-azu-gray rounded-lg hover:bg-black transition-all duration-300 group">
+                    <svg class="w-6 h-6 text-gray-400 group-hover:text-white mr-3" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                    </svg>
+                    <div>
+                      <p class="text-white font-medium">TikTok</p>
+                      <p class="text-gray-400 text-sm group-hover:text-gray-200">@azu_official</p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="mt-8 p-4 bg-gradient-to-r from-azu-purple to-azu-indigo rounded-lg text-center">
+                  <p class="text-white font-medium mb-2">Stay Connected</p>
+                  <p class="text-white text-opacity-80 text-sm">Follow AZU on all platforms for the latest updates, behind-the-scenes content, and exclusive releases!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Contact CTA -->
+          <div class="text-center mt-16">
+            <div class="bg-azu-gray-light rounded-2xl p-8 max-w-2xl mx-auto border border-azu-gray">
+              <h3 class="text-2xl font-display font-bold text-white mb-4">
+                Ready to Connect?
+              </h3>
+              <p class="text-gray-300 mb-6 leading-relaxed">
+                Whether you're a fan, industry professional, or media representative, we'd love to hear from you. Choose the best way to reach out!
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:contact@azu-music.com" 
+                   class="bg-azu-purple hover:bg-azu-indigo text-white px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-purple">
+                  Send Email
+                </a>
+                <a href="tel:+1234567890" 
+                   class="bg-transparent border-2 border-azu-accent text-azu-accent hover:bg-azu-accent hover:text-white px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-accent">
+                  Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Books Section -->
+      <section id="books" class="py-20 bg-azu-gray relative overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0">
+          <div class="absolute top-16 right-16 w-40 h-40 bg-azu-purple opacity-5 rounded-full blur-3xl"></div>
+          <div class="absolute bottom-24 left-24 w-32 h-32 bg-azu-indigo opacity-5 rounded-full blur-2xl"></div>
+          <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-azu-accent opacity-5 rounded-full blur-xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Section Header -->
+          <div class="text-center mb-16">
+            <h2 class="text-4xl sm:text-5xl font-display font-bold text-white mb-6">
+              Books by AZU
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-azu-purple to-azu-accent mx-auto mb-6"></div>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Dive deeper into AZU's creative world through written works. Download these exclusive books and discover the stories, philosophies, and inspirations behind the music.
+            </p>
+          </div>
+
+          <!-- Books Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Book 1: The Sound of Silence -->
+            <div class="bg-azu-gray-light rounded-xl shadow-xl overflow-hidden border border-azu-gray hover:border-azu-purple transition-all duration-300 group">
+              <div class="relative">
+                <div class="h-64 bg-gradient-to-br from-azu-purple to-azu-indigo flex items-center justify-center">
+                  <div class="text-center p-6">
+                    <svg class="w-16 h-16 text-white mx-auto mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                    <h3 class="text-xl font-display font-bold text-white">The Sound of Silence</h3>
+                  </div>
+                </div>
+                <div class="absolute top-4 right-4">
+                  <span class="bg-white bg-opacity-20 text-white px-2 py-1 rounded-full text-xs font-medium">
+                    FREE
+                  </span>
+                </div>
+                <div class="absolute bottom-4 left-4">
+                  <span class="bg-azu-purple bg-opacity-90 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    NEW
+                  </span>
+                </div>
+              </div>
+              
+              <div class="p-6">
+                <h3 class="text-xl font-display font-bold text-white mb-3">The Sound of Silence</h3>
+                <p class="text-gray-400 text-sm mb-2">Philosophy & Music</p>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                  An introspective journey exploring the relationship between silence and sound in music creation. Discover how quiet moments shape the most powerful melodies.
+                </p>
+                
+                <div class="flex items-center justify-between text-sm text-gray-400 mb-4">
+                  <span>📄 45 pages</span>
+                  <span>⏱️ 2 hour read</span>
+                  <span>📅 2024</span>
+                </div>
+
+                <div class="flex space-x-2">
+                  <a href="./books/the-sound-of-silence.pdf" 
+                     download="AZU - The Sound of Silence.pdf"
+                     class="flex-1 bg-azu-purple hover:bg-azu-indigo text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-purple text-center">
+                    <svg class="w-4 h-4 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    Download PDF
+                  </a>
+                  <button onclick="previewBook('silence')" 
+                          class="bg-azu-gray hover:bg-gray-600 text-white p-3 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500" 
+                          aria-label="Preview book">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 2: Rhythms of the Heart -->
+            <div class="bg-azu-gray-light rounded-xl shadow-xl overflow-hidden border border-azu-gray hover:border-azu-indigo transition-all duration-300 group">
+              <div class="relative">
+                <div class="h-64 bg-gradient-to-br from-azu-indigo to-azu-accent flex items-center justify-center">
+                  <div class="text-center p-6">
+                    <svg class="w-16 h-16 text-white mx-auto mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                    <h3 class="text-xl font-display font-bold text-white">Rhythms of the Heart</h3>
+                  </div>
+                </div>
+                <div class="absolute top-4 right-4">
+                  <span class="bg-white bg-opacity-20 text-white px-2 py-1 rounded-full text-xs font-medium">
+                    FREE
+                  </span>
+                </div>
+              </div>
+              
+              <div class="p-6">
+                <h3 class="text-xl font-display font-bold text-white mb-3">Rhythms of the Heart</h3>
+                <p class="text-gray-400 text-sm mb-2">Poetry & Lyrics</p>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                  A collection of poems and song lyrics that explore love, loss, and human connection. Raw emotions translated into powerful words that resonate with the soul.
+                </p>
+                
+                <div class="flex items-center justify-between text-sm text-gray-400 mb-4">
+                  <span>📄 72 pages</span>
+                  <span>⏱️ 3 hour read</span>
+                  <span>📅 2023</span>
+                </div>
+
+                <div class="flex space-x-2">
+                  <a href="./books/rhythms-of-the-heart.pdf" 
+                     download="AZU - Rhythms of the Heart.pdf"
+                     class="flex-1 bg-azu-indigo hover:bg-azu-purple text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-indigo text-center">
+                    <svg class="w-4 h-4 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    Download PDF
+                  </a>
+                  <button onclick="previewBook('heart')" 
+                          class="bg-azu-gray hover:bg-gray-600 text-white p-3 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500" 
+                          aria-label="Preview book">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 3: Behind the Beat -->
+            <div class="bg-azu-gray-light rounded-xl shadow-xl overflow-hidden border border-azu-gray hover:border-azu-accent transition-all duration-300 group">
+              <div class="relative">
+                <div class="h-64 bg-gradient-to-br from-azu-accent to-azu-purple flex items-center justify-center">
+                  <div class="text-center p-6">
+                    <svg class="w-16 h-16 text-white mx-auto mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                    </svg>
+                    <h3 class="text-xl font-display font-bold text-white">Behind the Beat</h3>
+                  </div>
+                </div>
+                <div class="absolute top-4 right-4">
+                  <span class="bg-white bg-opacity-20 text-white px-2 py-1 rounded-full text-xs font-medium">
+                    FREE
+                  </span>
+                </div>
+                <div class="absolute bottom-4 left-4">
+                  <span class="bg-green-500 bg-opacity-90 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    POPULAR
+                  </span>
+                </div>
+              </div>
+              
+              <div class="p-6">
+                <h3 class="text-xl font-display font-bold text-white mb-3">Behind the Beat</h3>
+                <p class="text-gray-400 text-sm mb-2">Music Production Guide</p>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                  An insider's guide to music production, songwriting techniques, and the creative process. Learn the secrets behind AZU's most popular tracks.
+                </p>
+                
+                <div class="flex items-center justify-between text-sm text-gray-400 mb-4">
+                  <span>📄 98 pages</span>
+                  <span>⏱️ 4 hour read</span>
+                  <span>📅 2023</span>
+                </div>
+
+                <div class="flex space-x-2">
+                  <a href="./books/behind-the-beat.pdf" 
+                     download="AZU - Behind the Beat.pdf"
+                     class="flex-1 bg-azu-accent hover:bg-azu-purple text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-accent text-center">
+                    <svg class="w-4 h-4 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    Download PDF
+                  </a>
+                  <button onclick="previewBook('beat')" 
+                          class="bg-azu-gray hover:bg-gray-600 text-white p-3 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500" 
+                          aria-label="Preview book">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 4: Digital Dreams -->
+            <div class="bg-azu-gray-light rounded-xl shadow-xl overflow-hidden border border-azu-gray hover:border-azu-purple transition-all duration-300 group">
+              <div class="relative">
+                <div class="h-64 bg-gradient-to-br from-gray-700 to-azu-indigo flex items-center justify-center">
+                  <div class="text-center p-6">
+                    <svg class="w-16 h-16 text-white mx-auto mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <h3 class="text-xl font-display font-bold text-white">Digital Dreams</h3>
+                  </div>
+                </div>
+                <div class="absolute top-4 right-4">
+                  <span class="bg-white bg-opacity-20 text-white px-2 py-1 rounded-full text-xs font-medium">
+                    FREE
+                  </span>
+                </div>
+              </div>
+              
+              <div class="p-6">
+                <h3 class="text-xl font-display font-bold text-white mb-3">Digital Dreams</h3>
+                <p class="text-gray-400 text-sm mb-2">Technology & Music</p>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                  Exploring the intersection of technology and music creation. How digital tools are reshaping the future of artistic expression and sound design.
+                </p>
+                
+                <div class="flex items-center justify-between text-sm text-gray-400 mb-4">
+                  <span>📄 63 pages</span>
+                  <span>⏱️ 3 hour read</span>
+                  <span>📅 2024</span>
+                </div>
+
+                <div class="flex space-x-2">
+                  <a href="./books/digital-dreams.pdf" 
+                     download="AZU - Digital Dreams.pdf"
+                     class="flex-1 bg-azu-purple hover:bg-azu-indigo text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-purple text-center">
+                    <svg class="w-4 h-4 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    Download PDF
+                  </a>
+                  <button onclick="previewBook('digital')" 
+                          class="bg-azu-gray hover:bg-gray-600 text-white p-3 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500" 
+                          aria-label="Preview book">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 5: The Artist's Journey -->
+            <div class="bg-azu-gray-light rounded-xl shadow-xl overflow-hidden border border-azu-gray hover:border-azu-indigo transition-all duration-300 group">
+              <div class="relative">
+                <div class="h-64 bg-gradient-to-br from-azu-purple via-azu-indigo to-azu-accent flex items-center justify-center">
+                  <div class="text-center p-6">
+                    <svg class="w-16 h-16 text-white mx-auto mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    <h3 class="text-xl font-display font-bold text-white">The Artist's Journey</h3>
+                  </div>
+                </div>
+                <div class="absolute top-4 right-4">
+                  <span class="bg-white bg-opacity-20 text-white px-2 py-1 rounded-full text-xs font-medium">
+                    FREE
+                  </span>
+                </div>
+              </div>
+              
+              <div class="p-6">
+                <h3 class="text-xl font-display font-bold text-white mb-3">The Artist's Journey</h3>
+                <p class="text-gray-400 text-sm mb-2">Autobiography & Inspiration</p>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                  AZU's personal story of growth, challenges, and triumphs in the music industry. An inspiring memoir for aspiring artists and music lovers alike.
+                </p>
+                
+                <div class="flex items-center justify-between text-sm text-gray-400 mb-4">
+                  <span>📄 156 pages</span>
+                  <span>⏱️ 6 hour read</span>
+                  <span>📅 2022</span>
+                </div>
+
+                <div class="flex space-x-2">
+                  <a href="./books/the-artists-journey.pdf" 
+                     download="AZU - The Artist's Journey.pdf"
+                     class="flex-1 bg-azu-indigo hover:bg-azu-purple text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-indigo text-center">
+                    <svg class="w-4 h-4 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    Download PDF
+                  </a>
+                  <button onclick="previewBook('journey')" 
+                          class="bg-azu-gray hover:bg-gray-600 text-white p-3 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500" 
+                          aria-label="Preview book">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 6: Songwriting Secrets -->
+            <div class="bg-azu-gray-light rounded-xl shadow-xl overflow-hidden border border-azu-gray hover:border-azu-accent transition-all duration-300 group">
+              <div class="relative">
+                <div class="h-64 bg-gradient-to-br from-azu-accent to-gray-700 flex items-center justify-center">
+                  <div class="text-center p-6">
+                    <svg class="w-16 h-16 text-white mx-auto mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                    </svg>
+                    <h3 class="text-xl font-display font-bold text-white">Songwriting Secrets</h3>
+                  </div>
+                </div>
+                <div class="absolute top-4 right-4">
+                  <span class="bg-white bg-opacity-20 text-white px-2 py-1 rounded-full text-xs font-medium">
+                    FREE
+                  </span>
+                </div>
+                <div class="absolute bottom-4 left-4">
+                  <span class="bg-blue-500 bg-opacity-90 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    GUIDE
+                  </span>
+                </div>
+              </div>
+              
+              <div class="p-6">
+                <h3 class="text-xl font-display font-bold text-white mb-3">Songwriting Secrets</h3>
+                <p class="text-gray-400 text-sm mb-2">Creative Writing Guide</p>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                  Unlock the secrets of compelling songwriting. From melody creation to lyrical storytelling, learn the techniques that make songs unforgettable.
+                </p>
+                
+                <div class="flex items-center justify-between text-sm text-gray-400 mb-4">
+                  <span>📄 84 pages</span>
+                  <span>⏱️ 4 hour read</span>
+                  <span>📅 2023</span>
+                </div>
+
+                <div class="flex space-x-2">
+                  <a href="./books/songwriting-secrets.pdf" 
+                     download="AZU - Songwriting Secrets.pdf"
+                     class="flex-1 bg-azu-accent hover:bg-azu-purple text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-accent text-center">
+                    <svg class="w-4 h-4 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    Download PDF
+                  </a>
+                  <button onclick="previewBook('songwriting')" 
+                          class="bg-azu-gray hover:bg-gray-600 text-white p-3 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500" 
+                          aria-label="Preview book">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Download Stats & CTA -->
+          <div class="mt-16 text-center">
+            <div class="bg-azu-gray-light rounded-2xl p-8 max-w-4xl mx-auto border border-azu-gray">
+              <h3 class="text-2xl font-display font-bold text-white mb-6">
+                Join Thousands of Readers
+              </h3>
+              
+              <!-- Stats -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-azu-purple mb-2">25,000+</div>
+                  <p class="text-gray-400">Total Downloads</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-azu-indigo mb-2">4.8★</div>
+                  <p class="text-gray-400">Average Rating</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-azu-accent mb-2">6</div>
+                  <p class="text-gray-400">Books Available</p>
+                </div>
+              </div>
+
+              <p class="text-gray-300 mb-6 leading-relaxed max-w-2xl mx-auto">
+                All books are completely free to download and share. Support independent artistry by spreading the word and leaving reviews!
+              </p>
+              
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#newsletter" 
+                   class="bg-azu-purple hover:bg-azu-indigo text-white px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-purple">
+                  Get Notified of New Books
+                </a>
+                <button onclick="downloadAllBooks()" 
+                        class="bg-transparent border-2 border-azu-accent text-azu-accent hover:bg-azu-accent hover:text-white px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-accent">
+                  Download All Books
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section id="newsletter" class="py-20 bg-gradient-to-br from-azu-purple via-azu-indigo to-azu-dark relative overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0">
+          <div class="absolute top-10 left-10 w-32 h-32 bg-azu-accent opacity-10 rounded-full animate-pulse"></div>
+          <div class="absolute bottom-20 right-20 w-24 h-24 bg-white opacity-5 rounded-full animate-pulse delay-1000"></div>
+          <div class="absolute top-1/2 right-1/4 w-16 h-16 bg-azu-accent opacity-15 rounded-full animate-pulse delay-500"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="text-center">
+            <!-- Section Header -->
+            <div class="mb-12">
+              <h2 class="text-4xl sm:text-5xl font-display font-bold text-white mb-6">
+                Stay in the Loop
+              </h2>
+              <div class="w-24 h-1 bg-white bg-opacity-50 mx-auto mb-6"></div>
+              <p class="text-xl text-white text-opacity-90 max-w-2xl mx-auto leading-relaxed">
+                Be the first to know about new releases, exclusive content, upcoming shows, and behind-the-scenes moments. Join the AZU community and never miss a beat.
+              </p>
+            </div>
+
+            <!-- Newsletter Form -->
+            <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white border-opacity-20 shadow-2xl">
+              <form class="space-y-6" onsubmit="handleNewsletterForm(event)">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="newsletter-name" class="block text-sm font-medium text-white mb-2">
+                      First Name
+                    </label>
+                    <input
+                      type="text"
+                      id="newsletter-name"
+                      name="name"
+                      required
+                      class="w-full px-4 py-3 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg text-white placeholder-white placeholder-opacity-70 focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200"
+                      placeholder="Your first name"
+                    />
+                  </div>
+                  <div>
+                    <label for="newsletter-email" class="block text-sm font-medium text-white mb-2">
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      id="newsletter-email"
+                      name="email"
+                      required
+                      class="w-full px-4 py-3 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg text-white placeholder-white placeholder-opacity-70 focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+                </div>
+
+                <!-- Preferences -->
+                <div class="text-left">
+                  <p class="text-white font-medium mb-3">What interests you most? (Optional)</p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <label class="flex items-center text-white cursor-pointer">
+                      <input type="checkbox" name="interests" value="new-music" class="mr-3 rounded border-white border-opacity-30 bg-white bg-opacity-20 text-azu-purple focus:ring-white">
+                      <span class="text-sm">New Music Releases</span>
+                    </label>
+                    <label class="flex items-center text-white cursor-pointer">
+                      <input type="checkbox" name="interests" value="live-shows" class="mr-3 rounded border-white border-opacity-30 bg-white bg-opacity-20 text-azu-purple focus:ring-white">
+                      <span class="text-sm">Live Shows & Events</span>
+                    </label>
+                    <label class="flex items-center text-white cursor-pointer">
+                      <input type="checkbox" name="interests" value="behind-scenes" class="mr-3 rounded border-white border-opacity-30 bg-white bg-opacity-20 text-azu-purple focus:ring-white">
+                      <span class="text-sm">Behind the Scenes</span>
+                    </label>
+                    <label class="flex items-center text-white cursor-pointer">
+                      <input type="checkbox" name="interests" value="exclusive-content" class="mr-3 rounded border-white border-opacity-30 bg-white bg-opacity-20 text-azu-purple focus:ring-white">
+                      <span class="text-sm">Exclusive Content</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                  type="submit"
+                  class="w-full bg-white text-azu-purple font-bold py-4 px-8 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent shadow-lg"
+                >
+                  Join the AZU Community
+                </button>
+
+                <!-- Privacy Notice -->
+                <p class="text-xs text-white text-opacity-70 leading-relaxed">
+                  By subscribing, you agree to receive emails from AZU. We respect your privacy and will never share your information. You can unsubscribe at any time.
+                </p>
+              </form>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="mt-12 text-center">
+              <p class="text-white text-opacity-80 mb-4">
+                Join over <span class="font-bold text-white">5,000+</span> fans already in the community
+              </p>
+              <div class="flex justify-center items-center space-x-6 text-white text-opacity-60">
+                <div class="flex items-center space-x-2">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-sm">No Spam</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-sm">Exclusive Content</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                  </svg>
+                  <span class="text-sm">Monthly Updates</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-gray-400">&copy; 2025 AZU. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- JavaScript Files -->
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/audio-player.js"></script>
+  </body>
+</html>
