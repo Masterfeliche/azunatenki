@@ -667,7 +667,7 @@ function submitToNewsletterService(data) {
 function previewBook(bookId) {
     const bookPreviews = {
         'silence': {
-            title: 'The Sound of Silence',
+            title: 'Longevity Strength Duty',
             preview: 'In the quiet moments between notes, we find the most profound truths about music and life. This book explores how silence shapes sound, and how the spaces between beats create the rhythm of our existence...'
         },
         'heart': {
