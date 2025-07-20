@@ -1,212 +1,129 @@
 {
-  "hero": {
-    "title": "AZU",
-    "subtitle": "Artist & Musician",
-    "backgroundImage": "./images/wallsssss/azu0398__029aca9e-6cee-4f69-a763-0266a26107b3.webp"
-  },
   "music": {
     "albums": [
       {
-        "id": "album1",
+        "id": "athout",
         "title": "ATHOUT",
-        "artwork": "./images/wallsssss/ATHOUT.webp",
+        "artwork": "./new_picture/IMG_4303.jpg",
+        "year": "2022",
         "tracks": [
           {
-            "title": "ATHOUT PT",
+            "title": "Opening",
             "duration": "3:45",
-            "audioUrl": "./assets/audio/track1.mp3"
+            "audioUrl": "./assets/audio/athout-opening.mp3",
+            "artist": "AZU"
           },
           {
-            "title": "ATHOUT PT 2",
+            "title": "Midnight Dreams",
             "duration": "4:12",
-            "audioUrl": "./assets/audio/track2.mp3"
+            "audioUrl": "./assets/audio/athout-midnight.mp3",
+            "artist": "AZU"
           },
           {
-            "title": "ATHOUT PT3",
-            "duration": "3:28",
-            "audioUrl": "./assets/audio/track3.mp3"
+            "title": "Urban Pulse",
+            "duration": "3:58",
+            "audioUrl": "./assets/audio/athout-urban.mp3",
+            "artist": "AZU"
           }
         ],
         "streamingLinks": {
-          "spotify": "https://open.spotify.com/album/example",
-          "apple": "https://music.apple.com/album/example",
-          "youtube": "https://youtube.com/playlist/example"
+          "spotify": "https://open.spotify.com/album/athout",
+          "apple": "https://music.apple.com/album/athout",
+          "youtube": "https://youtube.com/playlist/athout"
         }
       },
       {
-        "id": "album2",
+        "id": "bothofus",
         "title": "BOTHOFUS",
-        "artwork": "./images/wallsssss/BOTHOFUS APT.webp",
+        "artwork": "./new_picture/IMG_0322.jpg",
+        "year": "2023",
         "tracks": [
           {
-            "title": "BOTHOFUS APT 2",
-            "duration": "4:05",
-            "audioUrl": "./assets/audio/track4.mp3"
+            "title": "Together",
+            "duration": "4:23",
+            "audioUrl": "./assets/audio/bothofus-together.mp3",
+            "artist": "AZU"
           },
           {
-            "title": "BOTHOFUS APT 3",
-            "duration": "3:52",
-            "audioUrl": "./assets/audio/track5.mp3"
+            "title": "Harmony",
+            "duration": "3:56",
+            "audioUrl": "./assets/audio/bothofus-harmony.mp3",
+            "artist": "AZU"
           },
           {
-            "title": "BOTHOFUS APT 4",
-            "duration": "4:33",
-            "audioUrl": "./assets/audio/track6.mp3"
+            "title": "Connection",
+            "duration": "4:45",
+            "audioUrl": "./assets/audio/bothofus-connection.mp3",
+            "artist": "AZU"
           }
         ],
         "streamingLinks": {
-          "spotify": "https://open.spotify.com/album/example2",
-          "apple": "https://music.apple.com/album/example2"
+          "spotify": "https://open.spotify.com/album/bothofus",
+          "apple": "https://music.apple.com/album/bothofus",
+          "youtube": "https://youtube.com/playlist/bothofus"
         }
       },
       {
-        "id": "album3",
+        "id": "chochoro",
         "title": "CHOCHORO",
-        "artwork": "./images/wallsssss/CHOCHORO OG.webp",
+        "artwork": "./new_picture/IMG_3035.jpg",
+        "year": "2023",
         "tracks": [
           {
-            "title": "CHOCHORO PT",
-            "duration": "3:22",
-            "audioUrl": "./assets/audio/track7.mp3"
+            "title": "Flow",
+            "duration": "3:34",
+            "audioUrl": "./assets/audio/chochoro-flow.mp3",
+            "artist": "AZU"
           },
           {
-            "title": "CHOCHORO SPED UP",
-            "duration": "2:45",
-            "audioUrl": "./assets/audio/track8.mp3"
-          },
-          {
-            "title": "CHOCHORO (X-MOD)",
-            "duration": "4:15",
-            "audioUrl": "./assets/audio/track9.mp3"
+            "title": "Rhythm",
+            "duration": "4:18",
+            "audioUrl": "./assets/audio/chochoro-rhythm.mp3",
+            "artist": "AZU"
           }
         ],
         "streamingLinks": {
-          "spotify": "https://open.spotify.com/album/example3",
-          "apple": "https://music.apple.com/album/example3"
+          "spotify": "https://open.spotify.com/album/chochoro",
+          "apple": "https://music.apple.com/album/chochoro",
+          "youtube": "https://youtube.com/playlist/chochoro"
         }
       },
       {
-        "id": "album4",
+        "id": "heartspace",
         "title": "HEART & SPACE",
-        "artwork": "./images/wallsssss/HEART & SPACE.webp",
+        "artwork": "./new_picture/IMG_4293.jpg",
+        "year": "2023",
         "tracks": [
           {
-            "title": "HEART & SPACE PT",
-            "duration": "4:28",
-            "audioUrl": "./assets/audio/track10.mp3"
+            "title": "Emotional Landscape",
+            "duration": "5:12",
+            "audioUrl": "./assets/audio/heartspace-emotional.mp3",
+            "artist": "AZU"
           },
           {
-            "title": "HEART & SPACE 2",
-            "duration": "3:55",
-            "audioUrl": "./assets/audio/track11.mp3"
+            "title": "Infinite",
+            "duration": "4:33",
+            "audioUrl": "./assets/audio/heartspace-infinite.mp3",
+            "artist": "AZU"
+          },
+          {
+            "title": "Cosmic Love",
+            "duration": "3:47",
+            "audioUrl": "./assets/audio/heartspace-cosmic.mp3",
+            "artist": "AZU"
           }
         ],
         "streamingLinks": {
-          "spotify": "https://open.spotify.com/album/example4",
-          "youtube": "https://youtube.com/playlist/example4"
+          "spotify": "https://open.spotify.com/album/heartspace",
+          "apple": "https://music.apple.com/album/heartspace",
+          "youtube": "https://youtube.com/playlist/heartspace"
         }
-      }
-    ]
-  },
-  "merch": {
-    "items": [
-      {
-        "id": "merch1",
-        "name": "ATHOUT Album T-Shirt",
-        "description": "Premium cotton t-shirt featuring the iconic ATHOUT album artwork design",
-        "price": "$29.99",
-        "originalPrice": "$39.99",
-        "image": "./images/wallsssss/ATHOUT PT.webp",
-        "category": "apparel",
-        "rating": 4.5,
-        "reviews": 23,
-        "sizes": ["S", "M", "L", "XL", "XXL"],
-        "isNew": true,
-        "discount": 25
-      },
-      {
-        "id": "merch2",
-        "name": "BOTHOFUS Vinyl Record",
-        "description": "Limited edition vinyl pressing of AZU's BOTHOFUS album with exclusive artwork",
-        "price": "$34.99",
-        "image": "./images/wallsssss/BOTHOFUS YT.webp",
-        "category": "music",
-        "rating": 5.0,
-        "reviews": 18,
-        "isNew": false
-      },
-      {
-        "id": "merch3",
-        "name": "CHOCHORO Art Poster",
-        "description": "High-quality art print featuring the CHOCHORO album artwork - perfect for any music lover's wall",
-        "price": "$19.99",
-        "image": "./images/wallsssss/CHOCHORO PT.webp",
-        "category": "collectibles",
-        "rating": 4.8,
-        "reviews": 15
-      },
-      {
-        "id": "merch4",
-        "name": "HEART & SPACE Hoodie",
-        "description": "Cozy pullover hoodie featuring the beautiful HEART & SPACE album artwork",
-        "price": "$49.99",
-        "originalPrice": "$59.99",
-        "image": "./images/wallsssss/HEART & SPACE 2.webp",
-        "category": "apparel",
-        "rating": 4.7,
-        "reviews": 31,
-        "sizes": ["S", "M", "L", "XL"],
-        "discount": 17
-      },
-      {
-        "id": "merch5",
-        "name": "PICHANA Album Cover Mug",
-        "description": "Ceramic coffee mug featuring the artistic PICHANA album design",
-        "price": "$16.99",
-        "image": "./images/wallsssss/PICHANA.png",
-        "category": "accessories",
-        "rating": 4.3,
-        "reviews": 8
-      },
-      {
-        "id": "merch6",
-        "name": "YU Collection Tote Bag",
-        "description": "Eco-friendly canvas tote bag featuring the YU album artwork",
-        "price": "$18.99",
-        "image": "./images/wallsssss/YU.webp",
-        "category": "accessories",
-        "rating": 4.1,
-        "reviews": 6
-      },
-      {
-        "id": "merch7",
-        "name": "NIA Art Print Set",
-        "description": "Set of 3 high-quality prints featuring different NIA album variations",
-        "price": "$24.99",
-        "originalPrice": "$35.99",
-        "image": "./images/wallsssss/NIA.webp",
-        "category": "collectibles",
-        "rating": 4.9,
-        "reviews": 42,
-        "isNew": true,
-        "discount": 31
-      },
-      {
-        "id": "merch8",
-        "name": "SEMA Embroidered Cap",
-        "description": "Stylish snapback cap with embroidered SEMA album logo, perfect for concerts",
-        "price": "$24.99",
-        "image": "./images/wallsssss/SEMA.webp",
-        "category": "accessories",
-        "rating": 4.2,
-        "reviews": 12,
-        "sizes": ["One Size"]
       }
     ]
   },
   "about": {
     "biography": "AZU is an innovative artist and musician who creates immersive musical experiences that blend artistic vision with contemporary sound. Drawing inspiration from urban landscapes and midnight dreams, AZU's music captures the essence of modern life while maintaining a timeless artistic quality. With a unique approach to songwriting and production, AZU has quickly gained recognition for creating atmospheric soundscapes that resonate with listeners across the globe.",
-    "image": "./images/pics/photo_1_2025-07-11_14-29-26.jpg",
+    "image": "./new_picture/_DSC7746.jpg",
     "socialMedia": {
       "instagram": "https://instagram.com/azu_official",
       "spotify": "https://open.spotify.com/artist/azu",
@@ -217,20 +134,21 @@
   "news": [
     {
       "date": "2024-01-15",
-      "title": "New Single 'Electric Dreams' Released",
-      "content": "AZU's latest single 'Electric Dreams' is now available on all streaming platforms. The track showcases a new direction in AZU's artistic journey, blending electronic elements with organic instrumentation.",
-      "link": "https://example.com/news/electric-dreams"
+      "title": "New Album 'ECHOES' Coming Soon",
+      "content": "AZU announces the upcoming release of a new album 'ECHOES', featuring collaborations with international artists and exploring new sonic territories.",
+      "link": "#"
     },
     {
-      "date": "2024-01-08",
-      "title": "Upcoming Concert Tour Announced",
-      "content": "AZU will be embarking on a nationwide tour starting March 2024. Tickets go on sale this Friday at 10 AM local time. Don't miss the chance to experience AZU's music live!",
-      "link": "https://example.com/tour-dates"
+      "date": "2023-12-10",
+      "title": "HEART & SPACE Reaches 1M Streams",
+      "content": "The latest album 'HEART & SPACE' has reached over 1 million streams across all platforms, marking a significant milestone in AZU's career.",
+      "link": "#"
     },
     {
-      "date": "2023-12-20",
-      "title": "Urban Symphony Album Reaches Gold Status",
-      "content": "AZU's second album 'Urban Symphony' has officially reached gold certification, marking a significant milestone in the artist's career. Thank you to all the fans for your incredible support!"
+      "date": "2023-11-22",
+      "title": "Live Performance at Music Festival",
+      "content": "AZU delivered an unforgettable performance at the International Music Festival, showcasing tracks from the latest releases with stunning visual effects.",
+      "link": "#"
     }
   ],
   "contact": {

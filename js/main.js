@@ -74,11 +74,17 @@ async function loadContent() {
             throw new Error('Failed to load content');
         }
         const data = await response.json();
+        
+        // Store content globally for audio player access
+        window.loadedContent = data;
+        
         populateContent(data);
     } catch (error) {
         console.error('Error loading content:', error);
         // Use fallback content if JSON fails to load
-        populateContent(getFallbackContent());
+        const fallbackData = getFallbackContent();
+        window.loadedContent = fallbackData;
+        populateContent(fallbackData);
     }
 }
 
@@ -592,16 +598,62 @@ function getFallbackContent() {
     };
 }
 
-// Play album function (to be implemented with audio player)
+// Play album function
 function playAlbum(albumId) {
     console.log('Playing album:', albumId);
-    // This will be implemented when audio player is ready
+    
+    // Find the album in loaded content
+    if (window.loadedContent && window.loadedContent.music && window.loadedContent.music.albums) {
+        const album = window.loadedContent.music.albums.find(a => a.id === albumId);
+        if (album && album.tracks.length > 0) {
+            // Add artwork to tracks
+            const tracksWithArtwork = album.tracks.map(track => ({
+                ...track,
+                artwork: album.artwork
+            }));
+            
+            // Load first track and set playlist
+            if (window.audioPlayer) {
+                window.audioPlayer.loadTrack(tracksWithArtwork[0], tracksWithArtwork, 0)
+                    .then(() => {
+                        window.audioPlayer.play();
+                    })
+                    .catch(error => {
+                        console.error('Error loading album:', error);
+                        showNotification('Audio files not available for preview', 'info');
+                    });
+            }
+        }
+    }
 }
 
-// Play track function (to be implemented with audio player)
+// Play track function
 function playTrack(albumId, trackIndex) {
     console.log('Playing track:', albumId, trackIndex);
-    // This will be implemented when audio player is ready
+    
+    // Find the album and track in loaded content
+    if (window.loadedContent && window.loadedContent.music && window.loadedContent.music.albums) {
+        const album = window.loadedContent.music.albums.find(a => a.id === albumId);
+        if (album && album.tracks[trackIndex]) {
+            // Add artwork to tracks
+            const tracksWithArtwork = album.tracks.map(track => ({
+                ...track,
+                artwork: album.artwork
+            }));
+            
+            // Load specific track and set playlist
+            if (window.audioPlayer) {
+                window.audioPlayer.loadTrack(tracksWithArtwork[trackIndex], tracksWithArtwork, trackIndex)
+                    .then(() => {
+                        window.audioPlayer.play();
+                    })
+                    .catch(error => {
+                        console.error('Error loading track:', error);
+                        showNotification('Audio files not available for preview', 'info');
+                    });
+            }
+        }
+    }
 }
 
 // Handle newsletter form submission

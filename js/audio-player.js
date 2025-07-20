@@ -282,15 +282,7 @@ let audioPlayer;
 
 document.addEventListener('DOMContentLoaded', function() {
     audioPlayer = new AudioPlayer();
+    
+    // Make audio player globally accessible
+    window.audioPlayer = audioPlayer;
 });
-
-// Global functions to be called from other scripts
-window.playTrack = function(albumId, trackIndex) {
-    // This will be implemented when content is loaded
-    console.log('Play track called:', albumId, trackIndex);
-};
-
-window.playAlbum = function(albumId) {
-    // This will be implemented when content is loaded
-    console.log('Play album called:', albumId);
-};
