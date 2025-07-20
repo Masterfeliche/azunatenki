@@ -720,7 +720,7 @@ function previewBook(bookId) {
     const bookPreviews = {
         'silence': {
             title: 'Longevity Strength Duty',
-            preview: 'In the quiet moments between notes, we find the most profound truths about music and life. This book explores how silence shapes sound, and how the spaces between beats create the rhythm of our existence...'
+            preview: 'In a world where millions of artists are fighting for fleeting seconds of attention, most pour money and energy into visuals that quickly fade,Azu, the creator and manager behind Tenki TV, a channel that proves there’s another way. Through reimagined visuals for songs by Juice WRLD, The Kid Laroi, Russ, Rema, and more, Tenki TV shows how the right mindset and strategy can keep music alive years after its release.In this free book, he shares the LSD mindset — Longevity, Strength, and Duty — with real examples and hard‑earned lessons, helping artists avoid costly mistakes, save time, and create visuals that truly work for their music.'
         },
         'heart': {
             title: 'Rhythms of the Heart',
@@ -779,9 +779,6 @@ function showBookPreview(title, preview) {
                 <button onclick="document.body.removeChild(this.closest('.fixed'))" 
                         class="bg-azu-purple hover:bg-azu-indigo text-white px-6 py-2 rounded-lg transition-colors duration-200">
                     Close Preview
-                </button>
-                <button class="bg-gray-600 hover:bg-gray-500 text-white px-6 py-2 rounded-lg transition-colors duration-200">
-                    Download Full Book
                 </button>
             </div>
         </div>
