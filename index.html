@@ -83,7 +83,7 @@
       }
 
       .slider::-webkit-slider-track {
-        background: #1A1A1A;
+        background: #1a1a1a;
         height: 8px;
         border-radius: 4px;
       }
@@ -105,7 +105,7 @@
       }
 
       .slider::-moz-range-track {
-        background: #1A1A1A;
+        background: #1a1a1a;
         height: 8px;
         border-radius: 4px;
         border: none;
@@ -127,6 +127,7 @@
         background: #fbbf24;
         transform: scale(1.1);
       }
+
     </style>
 
     <!-- No JavaScript preloading needed -->
@@ -147,7 +148,10 @@
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
-          <div class="text-2xl font-display font-bold text-white">AZU</div>
+          <div class="text-2xl font-display font-bold text-white">
+            AZU
+          </div>
+          
           <div class="hidden md:flex space-x-4 lg:space-x-8">
             <a
               href="#hero"
@@ -160,9 +164,9 @@
               >About</a
             >
             <a
-              href="#mystory"
+              href="#story"
               class="text-white hover:text-azu-amber transition-colors duration-200"
-              >Mystory</a
+              >My Story</a
             >
             <a
               href="#music"
@@ -181,20 +185,23 @@
               >News</a
             >
             <a
-              href="#contact"
-              class="text-white hover:text-azu-amber transition-colors duration-200"
-              >Contact</a
-            >
+            href="#contact"
+            class="text-white hover:text-azu-amber transition-colors duration-200"
+            >Contact</a
+          >
             <a
               href="#books"
               class="text-white hover:text-azu-amber transition-colors duration-200"
               >Books</a
             >
+          
             <a
               href="#newsletter"
               class="text-white hover:text-azu-amber transition-colors duration-200"
               >Newsletter</a
             >
+           
+
             
           </div>
           <!-- Mobile menu button -->
@@ -230,6 +237,11 @@
               >Home</a
             >
             <a
+            href="#about"
+            class="block px-3 py-2 text-white hover:text-azu-amber transition-colors duration-200"
+            >About</a
+          >
+            <a
               href="#story"
               class="block px-3 py-2 text-white hover:text-azu-amber transition-colors duration-200"
               >My Story</a
@@ -239,11 +251,7 @@
               class="block px-3 py-2 text-white hover:text-azu-amber transition-colors duration-200"
               >Music</a
             >
-            <a
-              href="#about"
-              class="block px-3 py-2 text-white hover:text-azu-amber transition-colors duration-200"
-              >About</a
-            >
+           
             <a
               href="#merch"
               class="block px-3 py-2 text-white hover:text-azu-amber transition-colors duration-200"
@@ -255,21 +263,22 @@
               >News</a
             >
             <a
-              href="#contact"
-              class="block px-3 py-2 text-white hover:text-azu-amber transition-colors duration-200"
-              >Contact</a
-            >
+            href="#contact"
+            class="block px-3 py-2 text-white hover:text-azu-amber transition-colors duration-200"
+            >Contact</a
+          >
             <a
               href="#books"
               class="block px-3 py-2 text-white hover:text-azu-amber transition-colors duration-200"
               >Books</a
             >
+          
             <a
               href="#newsletter"
               class="block px-3 py-2 text-white hover:text-azu-amber transition-colors duration-200"
               >Newsletter</a
             >
-            
+           
           </div>
         </div>
       </div>
@@ -465,7 +474,7 @@
       </section>
 
       <!-- My Story Section -->
-      <section id="mystory" class="py-20 bg-azu-darker relative overflow-hidden">
+      <section id="story" class="py-20 bg-azu-darker relative overflow-hidden">
         <!-- Background decorative elements -->
         <div class="absolute inset-0">
           <div
@@ -671,7 +680,35 @@
           </div>
 
           <!-- Call to Action -->
-          
+          <div class="text-center mt-20 px-4 sm:px-0">
+            <div
+              class="bg-azu-gray-light rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto border border-azu-gray"
+            >
+              <h3 class="text-xl sm:text-2xl font-display font-bold text-white mb-4">
+                Be Part of the Story
+              </h3>
+              <p class="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base"></p>
+                Every listener becomes part of AZU's journey. Experience the
+                music, feel the emotions, and become part of a community that
+                celebrates artistic expression.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="#music"
+                  class="bg-azu-amber hover:bg-azu-amber_alt text-white px-6 sm:px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-amber w-full sm:w-auto"
+                >
+                  Listen Now
+                </a>
+                <a
+                  href="#contact"
+                  class="bg-transparent border-2 border-azu-accent text-azu-accent hover:bg-azu-accent hover:text-white px-6 sm:px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-azu-accent w-full sm:w-auto"
+                >
+                  Connect With AZU
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Music Section -->
@@ -1374,7 +1411,6 @@
                       >M</span
                     >
                     <span
-                     
                       class="bg-azu-gray text-white px-2 py-1 rounded text-xs"
                       >L</span
                     >
@@ -1462,7 +1498,6 @@
                       >M</span
                     >
                     <span
-                     
                       class="bg-azu-gray text-white px-2 py-1 rounded text-xs"
                       >L</span
                     >
@@ -1550,7 +1585,6 @@
                       >M</span
                     >
                     <span
-                     
                       class="bg-azu-gray text-white px-2 py-1 rounded text-xs"
                       >L</span
                     >
@@ -1655,7 +1689,19 @@
             </div>
           </div>
 
-          
+          <!-- JavaScript for toggling music platforms -->
+          <script>
+            function showMusicPlatforms(id) {
+              const element = document.getElementById(id);
+              if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+              } else {
+                element.classList.add('hidden');
+              }
+            }
+          </script>
+        </div>
+      </section>
 
       <!-- News Section -->
       <section id="news" class="py-20 bg-azu-darker">
@@ -2048,7 +2094,7 @@
                 <div class="flex items-center mb-4">
                   <div class="bg-azu-indigo bg-opacity-20 p-3 rounded-lg mr-4">
                     <svg class="w-6 h-6 text-azu-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-1.997 1.884z" />
                     </svg>
                   </div>
                   <h3 class="text-xl font-display font-bold text-white">Email</h3>
@@ -2056,11 +2102,16 @@
                 <div class="space-y-2 ml-14">
                   <div>
                     <p class="text-gray-400 text-sm">General Inquiries</p>
-                    <a href="mailto:officialazu@gmail.com" class="text-white hover:text-azu-indigo transition-colors duration-200 font-medium">
-                      officialazu@gmail.com
+                    <a href="mailto:contact@azu-music.com" class="text-white hover:text-azu-indigo transition-colors duration-200 font-medium">
+                      contact@azu-music.com
                     </a>
                   </div>
-                  
+                  <div>
+                    <p class="text-gray-400 text-sm">Business & Collaborations</p>
+                    <a href="mailto:business@azu-music.com" class="text-white hover:text-azu-indigo transition-colors duration-200 font-medium">
+                      business@azu-music.com
+                    </a>
+                  </div>
                   
                 </div>
               </div>
@@ -2082,7 +2133,11 @@
                     <p class="text-white font-medium">Dar es Salaam</p>
                     <p class="text-gray-300 text-sm">Kinondoni<br>Mbezi Beach</p>
                   </div>
-                  
+                  <div>
+                    <p class="text-gray-400 text-sm">Recording Studio</p>
+                    <p class="text-white font-medium">Masaki</p>
+                    <p class="text-gray-300 text-sm">Haille Sellaise road<br>Mtaa wa chini</p>
+                  </div>
                   
                 </div>
               </div>
@@ -2109,11 +2164,6 @@
                     <svg class="w-6 h-6 text-gray-400 group-hover:text-white mr-3" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-2.508 0-4.541-2.033-4.541-4.541s2.033-4.541 4.541-4.541 4.541 2.033 4.541 4.541-2.033 4.541-4.541 4.541zm7.49-8.094c-.587 0-1.063-.476-1.063-1.063s.476-1.063 1.063-1.063 1.063.476 1.063 1.063-.476 1.063-1.063 1.063z"
                     />
-                  </svg>
-                  <div>
-                    <p class="text-white font-medium group-hover:text-white">Instagram</p>
-                    <p class="text-gray-400 text-sm group-hover:text-gray-200">@azu_official</p>
-                  </div>
                   </a>
 
                   <!-- Spotify -->
@@ -2122,11 +2172,6 @@
                     <svg class="w-6 h-6 text-gray-400 group-hover:text-white mr-3" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"
                     />
-                  </svg>
-                  <div>
-                    <p class="text-white font-medium">Spotify</p>
-                    <p class="text-gray-400 text-sm group-hover:text-gray-200">Stream Music</p>
-                  </div>
                   </a>
 
                   <!-- YouTube -->
@@ -2216,7 +2261,7 @@
         <!-- Background decorative elements -->
         <div class="absolute inset-0">
           <div class="absolute top-16 right-16 w-40 h-40 bg-azu-purple opacity-5 rounded-full blur-3xl"></div>
-          <div class="absolute bottom-24 left-24 w-32 h-32 bg-azu-indigo opacity-5 rounded-full blur-2xl"></div>
+          <div class="absolute bottom-24 left-24 w-32 h-32 bg-azu-indigo opacity-5 rounded-full blur-xl"></div>
           <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-azu-accent opacity-5 rounded-full blur-xl"></div>
         </div>
 
@@ -2227,11 +2272,12 @@
               BEHIND THE SONGS
             </h2>
             <div class="w-24 h-1 bg-gradient-to-r from-azu-purple to-azu-accent mx-auto mb-6"></div>
-            <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
               Dive deeper into AZU's creative world through written works. Download these exclusive books and discover the stories, philosophies, and inspirations behind the music.
             </p>
           </div>
 
+          <!-- Books Grid -->
           <!-- Books Grid -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
@@ -2665,10 +2711,41 @@
       </div>
     </div>
 
+
+   
+
+
     <!-- JavaScript Files -->
     <script src="./js/main.js"></script>
     <script src="./js/animations.js"></script>
     <script src="./js/audio-player.js"></script>
+    <script defer async>
+      document.addEventListener('DOMContentLoaded', function() {
+        // setting global variables
+        window.botId = 6226
+        
+        // create div with id = sarufi-chatbox
+        const div = document.createElement("div")
+        div.id = "sarufi-chatbox"
+        document.body.appendChild(div)
+    
+        // create and attach script tag
+        const script = document.createElement("script")
+        script.crossOrigin = true
+        script.type = "module"
+        script.src = "https://cdn.jsdelivr.net/gh/flexcodelabs/sarufi-chatbox/example/vanilla-js/script.js"
+        document.head.appendChild(script)
+    
+        // create and attach css
+        const style = document.createElement("link")
+        style.crossOrigin = true
+        style.rel = "stylesheet"
+        style.href = "https://cdn.jsdelivr.net/gh/flexcodelabs/sarufi-chatbox/example/vanilla-js/style.css"
+        document.head.appendChild(style)
+      });
+    </script>
+    
+    
   </body>
 </html>
   
